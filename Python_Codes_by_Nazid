@@ -1,1 +1,2770 @@
+1:Print(“Hello world”)      
+output:Hello world
+-----------------------
+2.Print("hello\n hello\n hello")
+output:
+hello
+hello
+hello 
+------------------------------------------
+
+3.print("Hello all")
+a=input("enter the name ")
+print("Hi "+ a +" How are you?")
+output:
+Hello all
+enter the name Nazid
+Hi Nazid How are you?
+----------------------------------------
+4.
+print("First Program-Python")
+print("Its is declared like this:")
+print("print('what to print?I don't know')")
+
+o/p:
+First Program-Python
+Its is declared like this:
+print('what to print?I don't know')
+
+
+Therory:
+Python is one the simple and easy lanaguage
+Free &Open source
+High Level Language
+Developed by Guido van Rossum
+Portable in various OS
+AI&ML ,website dev,games can be developed
+
+---------------------------------------------
+5.
+
+print("My name is Nazid","I am a Software Engineer")
+o/p:My name is Nazid I am a Software Engineer
+-----------------------------------------
+6:
+print(23)
+print(22)
+o/p:23
+    22
+    
+ Variables:A variable is the name given to a memory location in a program
+whos value changes as name itself suggest which vary over time
+---------------------------
+7.
+name="Nazid"
+age=23
+package=5
+print("My name is",name,"my age is",age)
+
+o/p:
+My name is Nazid my age is 23
+
+----------------------------------------
+8.
+name="Nazid"
+age=26
+package=5
+age2=age
+print("My name is",name,"my age is",age2)
+
+o/p:My name is Nazid my age is 26
+
+--------------------------------------
+9.
+print(type(name))
+print(type(age))
+package=5.3
+print(type(package))
+o/p:
+<class 'str'>
+<class 'int'>
+<class 'float'>
+
+------------------------------------------------------------------
+Data types :String,int,float(decimal values),boolean (T/F),None
+Python is a implicit Lanaguage,Data type it can understand,we don't define type separately
+--------------------------------------------------------------------
+10.
+a=23
+b=True
+c=None
+print(type(a))
+print(type(b))
+print(type(c))
+o/p:
+<class 'int'>
+<class 'bool'>
+<class 'NoneType'>
+-------------------------------------------------------------
+Punctuators:
+ These are the symbols that used in Python to organize the structures, statements, and expressions. Some of the Punctuators are: [ ] { } ( ) @ -= += *= //= **== = , etc.
+ 
+ --------------------------------------------------------------
+ Expression exceution:
+ 
+ Eg:
+ 11.    String and numeric can operate together with * 
+a=2
+b=4
+txt="@"
+print(a*txt*b)
+o.p:@@@@@@@@
+
+12.String and String can operate with +  (concatenation)
+
+a,b="2",3
+txt="@"
+print((a+txt)*b)
+o/p:2@2@2@
+
+13.Numeric values can operate with all the arithmatic operators
+a=1
+b=3
+c=2
+print(a+b*c)
+0/p:7
+ 
+14.arithmatic Expression with float and integer will result float
+a=50
+b=2.1
+c=a*b
+print(c)
+print(type(c))
+0/p:
+105.0
+<class 'float'>
+
+15.Result of division operator with two integer will be float
+A,b=1,2
+C=A/b
+print(C)
+Output:0.5
+
+16.Integer Division with float and int will give int displayed as float
+a,b=1.5,3
+c=a//b
+print(c,a/b)
+o/p:0.0 0.5
+
+=>Floor gives closest integer,which is lesser than or equal to the float value
+0.1->0  :5.2->5:  7.88->7  :  -5.2=-6
+
+17.
+A,B=-12,5
+C=A//B
+print(C)
+0/p:-3
+
+18.Remainder is negative when denominator is negative 
+a,b=-5,2
+c=a%b
+print(c)
+w,r=5,-2
+g=w%r
+print(g)
+t,u=5,3
+d=t%u
+print(d)
+
+o/p:
+1
+-1
+2
+
+num/Den  +/+   =+ve
+num/Den  -/-   =+ve
+num/Den  +/-   =-ve
+num/Den  -/+   =-ve 
+----------------------------------------------------------------------------------------------
+Comments in python: Better understanding and readable code 
+#Single line comments
+"""This is multi-line comment"""
+--------------------------------------------------
+Input in Python:
+Input() statements are used to accept the values from the user
+
+Sring input
+name=input("name:")
+
+int input
+name =int(input("age"))
+
+float input
+price=float(input("Price:"))
+--------------------------------
+19.
+name=input("Enter the name")
+age=int(input("Enter the age"))
+price=float((input("price:")))
+print("My name is",name ,"and i am ",age ,"Years old")
+o/p:
+Enter the nameNazid
+Enter the age25
+price:34
+My name is Nazid and i am  25 Years old
+
+-----------------------------------------
+Conditional Statements:if-elif-else(Syntax)
+if(condition):
+  statements
+elif(condition):
+  Statements
+else(condition)
+  statements  
+ ------------------------------------------- 
+20.
+
+light=input("Enter the color seen in the diplay")
+if (light =="red"):
+    print("Please Stop the vehicle")
+elif (light=="green"):
+    print("please move across the road")
+elif (light=="yellow"):
+    print("please get the engine ready to move the vehicle ")
+else:
+    print("Light is not working")
+
+o/p:
+Enter the color seen in the diplayred
+Please Stop the vehicle
+--------------------------------------------------
+21.
+marks=int(input("Enter the marks"))
+if (marks>=90):
+    print("you have got A+")
+elif (marks>=80 and marks<=90):
+    print("you have got A grade")
+elif (marks>=70 and marks<=80):
+    print("B grade")
+else:
+    print("you have C or below grade")
+    
+o/p:Enter the marks71
+B grade
+    
+------------------------------------------------------
+Single line If/Ternary operator:
+22.
+Food=input("Food:")
+print("sweet") if Food=="cake" or Food=="Jalebi" else print("not sweet")
+o/p:
+Food:cake
+sweet
+
+23.
+food=input("food:")
+eat="yes" if food=="cake" else "no"
+print(eat)
+o/p:
+food:cake
+yes
+
+--clever ternary operator:
+24.
+age=int(input("age:"))
+vote=("yes","no")[age<18]
+print(vote)
+
+o/p:
+age:17
+no
+
+25.
+age=int(input("age:"))
+vote=("no","yes")[age>=18]
+print(vote)
+
+o.p:
+age:23
+yes
+
+26.
+
+salary=float(input("Enter the salary:"))
+tax=salary*(0.1,0.2)[salary>50000]
+print(tax)
+o/p1:
+Enter the salary:60000
+12000.0
+o/p2:
+Enter the salary:23000
+2300.0
+
+------------------------------------------------------- 
+Type of operators:Arithmetic operators
+
+27.
+a=5
+b=3
+print(a+b)
+print(a-b)
+print(a/b)
+print(a**b)
+print(a%b) #remainder
+o/p:
+8
+2
+1.6666666666666667
+125
+2
+
+--------------------------------------------------------
+Relational operators
+28.
+a=50
+b=20
+print(a==b)
+print(a!=b)
+print(a>=b)
+print(a>b)
+print(a<=b)
+print(a<b)
+
+o/p:
+False
+True
+True
+True
+False
+False
+----------------------------Assignment operators
+29.
+num=10
+num=num+10
+print(num)
+
+num=20 
+num+=10
+print(num)
+
+num=9
+num-=9
+print(num)
+
+num=10
+num*=10
+print (num)
+
+num=20
+num/=2
+print(num)
+
+num=10
+num**=10
+print(num)
+
+o/p:   
+20
+30
+0
+100
+10.0
+10000000000
+
+-----------------logical operator(AND, OR and NOT)
+30.
+print(not True)
+print(not False)
+a=50
+b=20
+print(not (a>b))
+val1=True
+val2=False
+print("value:",val1 and val2)
+print("value:",(val1==val2) or val1>val2)
+
+0/p:
+False
+True
+False
+value: False
+value: True
+
+---------------------------------Type conversion(automatic) and type casting(manual)
+31.#type conversion
+a=23.34
+b=2
+sum=a+b
+print(a+b)
+print(type(sum))
+o/p:
+25.34
+<class 'float'>
+------------------------------------
+32.#type casting
+a="23"
+b=5
+c=int(a)
+z=print(b+c)
+print(type(z))
+o/p:
+ 28
+<class 'NoneType'>
+-----------------------------------------
+33.
+a=3.4
+print(str(a))
+print(type(a))
+o/p:
+3.4
+<class 'float'>
+---------------------------------------------
+34.input function:
+name=input("Enter the name")
+age=int(input("Enter the age:"))
+marks=float(input("Enter the marks"))
+print("welcome",name)
+print("age",age)
+print(marks)
+
+o/p:
+Enter the nameNazid
+Enter the age:24
+Enter the marks78
+welcome Nazid
+age 24
+78.0
+----------------------------------------------
+35.#sum of new numbers
+first=int(input("Enter the first digit"))
+second=int(input("Enter the second digit"))
+print("sum:",first+second)
+o/p:
+Enter the first digit23
+Enter the second digit23
+sum: 46
+---------------------------------
+36.#area of the square
+a=int(input("enter the side length"))
+area=a*a
+print(area)
+o/p:enter the side length4
+16
+---------------------------------
+37.input 2 floating point number &print the average
+num1=float(input("Enter the number1"))
+num2=float(input("Enter the number2"))
+avg=(num1+num2)/2
+print(avg)
+o/p:Enter the number1 3.2
+Enter the number2 3.3
+3.25
+--------------------------------------
+38.input 2 int numbers a and b ,print true if a is greater than or equal to b .If not print False
+Method1:
+a=int(input("Enter the number"))
+b=int(input("Enter the number"))
+if a>=b:
+    print("true")
+else:
+    print("False")
+
+Method2:
+a=int(input("Enter the number"))
+b=int(input("Enter the number"))
+print("True")if a>=b else print("False")
+
+--------------------------------------------
+39.String concatenation
+
+str1="Nazid"
+str2="Shaik"
+print(str1+str2)
+o/p:NazidShaik
+
+40.
+str1="Nazid"
+str2="Shaik"
+a=str1+str2
+print(len(a))
+o/p:10
+
+41.
+str1="Nazid"
+str2="Shaik"
+final_str=str1+" "+str2
+print(len(final_str))
+o/p:11
+================================================
+Indexing:for access the character we use indexing
+Nazid_Shaik
+012345678910
+-10-9-8-7-6-5-4-3-2-1
+42.
+str1="Nazid_"
+ch=str1[2]
+k=str1[5]
+print(ch)
+print(k)
+o/p:
+z
+_
+
+slicing:
+str='nazidshaik'
+str[1:4] is 'azi
+str[:4] is same as str[0:4]
+str[1:} is same as str[1:len(str)]
+
+----------------------------------------------------
+43.
+str="Nazid_"
+print(str[2:])
+print(str[5:])
+print(str[:-1])
+o/p:
+zid_
+_
+Nazid
+----------------------------------------------------
+String Functions:
+
+str="I am a coder"
+
+str.endswith("er")
+    #returns true if string ends with substr
+str.capitalize()
+    #capitalizes 1st character
+str.replace(old,new)  #replaces all occurences of old with new
+
+str.find(word)  #return 1st index of 1st occurence   
+
+str.count("am") #counts the occurance of substr in string 
+
+
+
+--------------------------------------------------------------------
+ 44.ends with string checking
+str="My name is Nazid and I am Python Programmer"
+str1=str.endswith("er")
+print(str1) 
+o/p:True
+
+str="My name is Nazid and I am a software "
+str1=str.endswith("er")
+print(str1)
+o/p: False
+
+----------------------------------------------------------------
+45.capitalizes
+str="my name is Nazid and I am a software "
+str1=str.capitalize()
+print(str1)
+o/p:My name is nazid and i am a software 
+
+str="name is Nazid and I am a software "
+str1=str.capitalize()
+print(str1)
+o/p;Name is nazid and i am a software
+----------------------------------------------------
+46.replace 
+str="name is Nazid and I am a software "
+str1=str.replace("software","Software_developer")
+print(str1)
+
+name="my name is Nazid"
+new_name=name.replace("Nazid","Nazid Shaik")
+print(new_name)
+o/p:
+name is Nazid and I am a Software_developer 
+my name is Nazid Shaik
+-----------------------------------------------------
+47.find 
+name="my name is pavan kalayan 12 age 26 and i have 3 backlogs"
+a=name.find("y")
+print(a)
+o.p:1
+
+name="my name is pavan kalayan 12 age 26 and i have 3 backlogs"
+a=name.find("is")
+print(a)
+o/p:8
+
+name="Nazid"
+a=name.find("i")
+print(a)
+o/p:3
+
+-----------------------------------------------------------
+48.sring count
+
+name="Nazid"
+a=name.count("i")
+print(a)
+o/p:1
+
+name="My Name is nazid and I am python developer"
+a=name.count("am")
+print(a)
+b=name.count("o")
+print(b)
+0/p:2
+    2
+ -------------------------------------------------------------
+49.WAP to input user's first name &print its length 
+
+a=input("Enter the name")
+print(len(a))
+o/p:Enter the nameNazid
+5
+
+----------------------------------------------------
+50.WAP to find the occurance of '$' in a string
+
+string="My salary is $ 20 and my rent is $9 and i save about $5 in a month"
+b=string.count("$")
+print(b)
+0/p:3
+--------------------------------------------------
+50.Conditional statement d ference if,elif,else
+
+num=5
+if(num>2):
+    print("greater than 2")
+if(num>3):
+    print("greater than 3")
+
+o/p:
+greater than 2
+greater than 3
+
+num=5
+if(num>2):
+    print("greater than 2")
+elif(num>3):
+    print("greater than 3")
+    
+o/p:greater than 2
+
+-----------------------------------------------------
+51.
+age=int(input("Enter the age"))
+if age>=18:
+    print("you can vote")
+else:
+    print("cannot vote")
+0/p:Enter the age12
+cannot vote
+-------------------------------------------
+52.Nesting 
+
+age=int(input("Enter the age:"))
+if(age>=18):
+    if(age>=80):
+        print("cannot drive")
+    else:
+        print("can drive")
+else:
+    print("cannot drive")    
+o/p:Enter the age:83
+cannot drive    
+o/p2:Enter the age:13
+cannot drive
+o/p3:Enter the age:34
+can drive
+-----------------------------------------
+53.WAP to check if a number entered by the user is odd or even.
+
+num=int(input("Enter the number:"))
+if num%2==0:
+    print("Even")
+else:
+    print("odd")
+o/p:Enter the number:20
+Even    
+o/p2:Enter the number:21
+odd
+---------------------------------------------
+54.WAP to check if a number is divisible by 7
+
+num=int(input("Enter the number:"))
+if num%7==0:
+    print("its divisible by 7")
+else:
+    print("not divisible")
+o.p:Enter the number:35
+its divisible by 7    
+
+--------------------------------------------------
+55.WAP to find the greatest of 3 numbers entered by the user
+
+a=int(input("Enter the num1:"))
+b=int(input("Enter the num2:"))
+c=int(input("Enter the num3:"))
+if(a>b and a>c):
+    print(a,"is the largest of all integers")
+elif(b>a and b>c):
+    print(b,"is the largest of all integers")
+elif(c>a and c>b):
+    print(c,"is the largest of all integers")
+    
+0/p:
+Enter the num1:3
+Enter the num2:1
+Enter the num3:4
+4 is the largest of all integers
+
+a=int(input("Enter the num1:"))
+b=int(input("Enter the num2:"))
+c=int(input("Enter the num3:"))
+if(a>=b and a>=c):
+    print(a,"is the largest of all integers")
+elif(b>=c):
+    print(b,"is the largest of all integers")
+else:
+    print(c,"is the largest of all integers")
+    
+o/p:Enter the num1:4
+Enter the num2:4
+Enter the num3:4
+4 is the largest of all integers 
+
+--------------------------------------------   
+   -->List in Python:
+A built in data type that stores set of values
+It can store elements of different type  (int,float ,string etc)  
+   
+56.
+marks=[94.4,87.5,95.3,66.4,56.2]
+print(marks)
+print(type(marks))
+print(marks[0])
+print(marks[2])
+print(len(marks))
+
+student=["karan","roy","mohith"]
+student[0]="Nazid"
+print(student)
+o/p:
+[94.4, 87.5, 95.3, 66.4, 56.2]
+<class 'list'>
+94.4
+95.3
+5
+['Nazid', 'roy', 'mohith']
+
+57.
+student=["karan",97,23,"mohith"]
+student[0]="Nazid"
+print(student)
+0/p:['Nazid', 97, 23, 'mohith']
+
+#strings are immutable
+#list is mutable 
+------------------------
+#list slicing
+58.
+marks=[84,94,76,63,48]
+print(marks[1:3])
+print(marks[2:])
+print(marks[-1:])
+print(marks[-3:-1])
+o/p:
+[94, 76]
+[76, 63, 48]
+[48]
+[76, 63]
+
+59.
+#list slicing
+
+marks=[84,94,76,63,48]
+
+print(marks[:-1])
+print(marks[-1:])
+print(marks[-2:-4])
+print(marks[3:-2])
+print(marks[-3:4])
+o.p:
+[84, 94, 76, 63]
+[48]
+[]
+[]
+[76, 63]
+---------------------------------
+#List Methods
+list=[2,1,3]
+list.append(4)   #adds one element at the end [2,1,3,4]
+list.sort()  [1,2,3]
+list.sort(reverse=True) #sorts in descending order [3,2,1]
+list.reverse() #reverses list [3,1,2]
+list.index(idx,el)  #insert element in index
+list.remove(1)  #[2,3]
+list.pop(idx)
+
+60.
+list=[2,1,3]
+list.append(31)
+print(list)
+o/p:[2, 1, 3, 31]
+
+list=[2,1,3]
+list.sort()
+print(list)
+o/p:[1, 2, 3]
+
+list=[2,1,3,46,123,24]
+list.sort(reverse=True)
+print(list)
+o/p:[123, 46, 24, 3, 2, 1]
+
+list=[2,1,3,46,123,24]
+list.reverse()
+print(list)
+o/p:[24, 123, 46, 3, 1, 2]
+
+61.
+list=["banana","mango","carrot","litchi","apple"]
+list.sort()
+print(list)
+list.reverse()
+print(list)
+o/p:
+['apple', 'banana', 'carrot', 'litchi', 'mango']
+['mango', 'litchi', 'carrot', 'banana', 'apple']
+
+62.list insert with index location
+list=["banana","mango","carrot","litchi","apple"]
+list.insert(1,"orange")
+print(list)
+o/p:
+['banana', 'orange', 'mango', 'carrot', 'litchi', 'apple']
+
+list=["banana","mango","carrot","litchi","apple"]
+list.insert(2,"pineaple")
+print(list)
+o/p:['banana', 'mango', 'pineaple', 'carrot', 'litchi', 'apple']
+
+62.list remove 
+list=[22,1,89,93]
+list.remove(22)
+print(list)
+o/p:[1, 89, 93]
+
+63.pop 
+list=[22,1,89,93]
+list.pop(2)
+print(list)
+o.p:[22, 1, 93]
+-------------------------------------------------------
+Tuples: A tuple is a built in data type lets us create immutable sequences of values
+
+tup=(87,63,33,96,76)  #tup[0],tup[1]
+tup[0]=87
+
+64.
+tup=(87,63,33,96,76)
+print(type(tup))
+
+tup=()
+print(type(tup))
+
+tup=(1)
+print(type(tup))
+
+tup=(1,)
+print(type(tup))
+
+o/p:
+<class 'tuple'>
+<class 'tuple'>
+<class 'int'>
+<class 'tuple'>
+-----------------------
+65.
+tup=(87,63,33,96,76)
+b=tup[2:3]
+print(b)
+o/p:(33,)
+-------------------------------
+66.
+#tuple methods
+
+tup=(1,2,3,5)
+print(tup[1:3])
+
+z=(1,2,3,44,88)
+print(z.index(44))
+print(z.index(88))
+
+x=(0,4,5,6,7)
+print(x.count(4))
+
+o.p:
+(2, 3)
+3
+4
+1
+-----------------------
+WAP to ask user to enter their 3 favorite movies &store them in a list
+solution1:
+67.
+mv1=input("Enter your fav movie1")
+mv2=input("Enter your fav movie2")
+mv3=input("Enter your fav movie3")
+list_of_movies=(mv1,mv2,mv3)
+print(list_of_movies)
+o/p:
+Enter your fav movie1panja
+Enter your fav movie2pk
+Enter your fav movie3don
+('panja', 'pk', 'don')
+
+solution2:
+movies=[]
+mv=input("Enter your fav movie1")
+movies.append(mv)
+mv=input("Enter your fav movie2")
+movies.append(mv)
+mv=input("Enter your fav movie3")
+movies.append(mv)
+print(movies)
+o/p:
+Enter your fav movie1don
+Enter your fav movie2mass
+Enter your fav movie3boss
+['don', 'mass', 'boss']
+
+solution3:
+movies=[]
+movies.append(input("Enter your fav movie1"))
+movies.append(input("Enter your fav movie2"))
+movies.append(input("Enter your fav movie3"))
+print(movies)
+o/p:
+Enter your fav movie1jk
+Enter your fav movie2pk
+Enter your fav movie3we
+['jk', 'pk', 'we']
+
+--------------------------------------
+WAP to check wheather the list is palidrome or not(hint:using copy command)
+68.
+list=["m","a","a","m"]
+list_copy = list.copy()
+list_copy.reverse()
+if (list==list_copy):
+    print("palindrome")
+else:   
+    print("not palindrome")
+o/p:palindrome
+--------------------------------------
+WAP to check number of students with A grade in the following tuple
+69.
+grade=("A","C","F","B","A")
+print(grade.count("A"))
+o//p:2
+-------------------------------
+->Dictionary in python:
+Dictionary are used to store data values in key:value pairs
+They are unordered(like we don't have index concept here),mutable(changeable)&don't allow duplicate keys
+
+dict ={
+"name" :"Shradha",
+"cppa" :9.6,
+"marks":[98,97,95],
+}
+
+-----------------------------
+70.
+info={
+    "Name":"Nazid",
+    "age":23,
+    "Height":"5'10"}
+print(info)
+o/p:{'Name': 'Nazid', 'age': 23, 'Height': "5'10"}
+---------------------------
+71.
+info={
+    "Name":"Nazid",
+    "Skills":["Python","sql","unix"],
+    "age":25,
+    "is_adult":True,
+    "projects":("EDW","EDF","GCP"),
+    4.5:"package"
+}
+print(info)
+o/p:{'Name': 'Nazid', 'Skills': ['Python', 'sql', 'unix'], 'age': 25, 'is_adult': True, 'projects': ('EDW', 'EDF', 'GCP'), 4.5: 'package'}
+------------------------------
+72.
+dict={
+    "Name":"Nazid",
+    "Skills":["Python","sql","unix"],
+    "age":25,
+    "is_adult":True,
+    "projects":("EDW","EDF","GCP"),
+    4.5:"package"
+}
+print(dict["Name"])
+print(dict["age"])
+print(dict["projects"])
+o/p:
+Nazid
+25
+('EDW', 'EDF', 'GCP')
+
+------------
+73.
+dict={
+    "Name":"Nazid",
+    "Skills":["Python","sql","unix"],
+    "age":25,
+    "is_adult":True,
+    "projects":("EDW","EDF","GCP"),
+    4.5:"package"
+}
+dict["Name"]="Nasreen",   #changing or replacing a key 
+dict["age"]=26,
+print(dict)
+
+o/p:{'Name': ('Nasreen',), 'Skills': ['Python', 'sql', 'unix'], 'age': (26,), 'is_adult': True, 'projects': ('EDW', 'EDF', 'GCP'), 4.5: 'package'}
+
+----------------------
+74.
+null_dict={}
+print(null_dict)
+null_dict["Name"]="Nazid",
+print(null_dict)
+o/p:
+{}
+{'Name': ('Nazid',)}
+-----------------------
+75.Nested Dictionary
+student={
+    "name":"Nazid",
+    "Subjects":{
+        "phy":98,
+        "che":90,
+        "math":98
+    }
+}
+print(student)
+print(student["name"])
+print(student["Subjects"]["che"])
+o/p:
+{'name': 'Nazid', 'Subjects': {'phy': 98, 'che': 90, 'math': 98}}
+Nazid
+90    
+--------------------------
+->Dictionary Methods:
+myDict.keys()           #returns all keys
+myDict.values()         #returns all values
+myDict.items()          #returns all(key,val) pairs as tuples
+myDict.get("key")       #returns the key according to values
+myDict.update(newDict)  #insert the specified items to the dictionary.
+
+-------------------------
+91.
+student={
+    "Name":"Nazid",
+    "Subjects":
+        {
+        "phy":98,
+        "che":57,
+        "math":63}
+         }
+print(student.keys())
+print(len(student))
+print(list(student.keys()))
+o/p:
+dict_keys(['Name', 'Subjects'])
+2
+['Name', 'Subjects']
+---------------------------
+92.
+student={
+    "Name":"Nazid",
+    "Subjects":
+        {
+        "phy":98,
+        "che":57,
+        "math":63}
+         }
+print(student.values())
+print(list(student.values()))
+
+o/p:
+dict_values(['Nazid', {'phy': 98, 'che': 57, 'math': 63}])
+['Nazid', {'phy': 98, 'che': 57, 'math': 63}]
+------------------------------
+93.myDict.items() :returns all the key value pair in the form of tuples
+
+student={
+    "Name":"Nazid",
+    "Subjects":
+        {
+        "phy":98,
+        "che":57,
+        "math":63}
+         }
+print(student.items())  #values we get in tuples
+# now we are type casting it to list
+print(list(student.items()))
+o/p:
+dict_items([('Name', 'Nazid'), ('Subjects', {'phy': 98, 'che': 57, 'math': 63})])
+[('Name', 'Nazid'), ('Subjects', {'phy': 98, 'che': 57, 'math': 63})]
+
+--------------------------------
+94.we can also access the tuples 
+
+student={
+    "Name":"Nazid",
+    "Subjects":
+        {
+        "phy":98,
+        "che":57,
+        "math":63}
+         }
+pairs=list(student.items())
+print(pairs[0])
+print(pairs[1])
+o/p:
+('Name', 'Nazid')
+('Subjects', {'phy': 98, 'che': 57, 'math': 63})
+
+-------------------------------------
+95.Effective way of syntax
+student={
+    "Name":"Nazid",
+    "Subjects":
+        {
+        "phy":98,
+        "che":57,
+        "math":63}
+         }
+print(student["Name"])
+print(student.get("Name"))
+#print(student["Name2"])  #error
+print(student.get("Name2")) #None
+o/p:
+Nazid
+Nazid
+None
+-----------------------------------
+96.updating a dictionary
+student={
+    "Name":"Nazid",
+    "Subjects":
+        {
+        "phy":98,
+        "che":57,
+        "math":63}
+         }
+
+student.update({"city":"Hyderabad"})
+print(student)
+
+o/p:
+{'Name': 'Nazid', 'Subjects': {'phy': 98, 'che': 57, 'math': 63}, 'city': 'Hyderabad'}
+------------------------------------
+97.other way of updating a dictionary
+
+student={
+    "Name":"Nazid",
+    "Subjects":
+        {
+        "phy":98,
+        "che":57,
+        "math":63}
+         }
+
+new_dict={"city":"Hyderabad"}
+student.update(new_dict)
+print(student)
+o/p:
+{'Name': 'Nazid', 'Subjects': {'phy': 98, 'che': 57, 'math': 63}, 'city': 'Hyderabad'}
+
+===---------------------------------------
+--->Sets in Python:
+Set is the collection of unordered items(no indexing)
+Each element in the set must be unique and immutable
+set is mutable
+set->elements ->immutable
+
+sets contains immutable objects like boolean,int,float,str,tuple,
+sets cannot contain list and dictionary
+
+98.
+collection={1,2,3,"Hyd","Mumbai"}
+co={1,1,2,2,"Hyd","Hyd"}   #set cannot allow duplicate values
+print(collection)
+print(co)
+print(type(collection))
+print(type(co))
+o/p:
+{1, 2, 3, 'Hyd', 'Mumbai'}
+{1, 2, 'Hyd'}
+<class 'set'>
+<class 'set'>
+------------------
+99.Empty set syntax
+
+collection=set()
+print(type(collection))
+o/p:<class 'set'>
+-----------------------
+-->set Methods:
+set.add(el) #adds an element
+set.remove(el) #removes the element
+set.clear()  #empties the set
+set.pop()  #removes a random value 
+
+---------------------
+100.
+collection=set()
+collection.add(1)
+collection.add(2)
+collection.add(2)
+print(collection)
+
+o/p:
+{1, 2}
+
+-------------------------
+101.
+collection=set()
+collection.add(1)
+collection.add(2)
+collection.add(2)
+print(collection)
+collection.add((4,5,6))
+collection.add("Fan_boy")
+print(collection)
+print(len(collection))
+o/p:
+{1, 2}
+{'Fan_boy', 1, 2, (4, 5, 6)}
+4
+---------------------
+102.
+collection=set()
+collection.add(1)
+collection.add(2)
+collection.add(2)
+print(collection)
+collection.add((4,5,6))
+collection.add("Fan_boy")
+print(collection)
+print(len(collection))
+collection.clear()
+print(collection)
+print(len(collection))
+o/p:
+{1, 2}
+{1, 2, 'Fan_boy', (4, 5, 6)}
+4
+set()
+0
+
+---------------
+103.Randomly pops a number
+collection={"Nazid","is","a good","Boy"}
+collection.pop()
+print(collection)
+o/p:
+{'Boy', 'is', 'a good'}
+
+--------------------
+->set.union(set2)  #combines both set values &returns new
+->set.intersection(set2) #combines common values &returns new
+
+104.
+set1={1,2,3}
+set2={2,5,6}
+print(set1.union(set2))
+print(set1)
+print(set2)
+o/p:
+{1, 2, 3, 5, 6}
+{1, 2, 3}
+{2, 5, 6}
+
+----------------
+105.
+set1={1,2,3}
+set2={2,5,6}
+print(set1.intersection(set2))
+print(set1)
+print(set2)
+o/p:
+{2}
+{1, 2, 3}
+{2, 5, 6}
+
+--------------------------------------
+106.store following word meaning in a python dictionary:
+table:"a piece of furniture","list of facts&figures"
+    cat:"a small animal
+    
+Answer:
+
+dict={
+    "table":["a piece of furniture","list of facts&figures"],
+    "cat":"a small animal"
+}
+print(dict)
+
+o/p:
+{'table': ['a piece of furniture', 'list of facts&figures'], 'cat': 'a small animal'}
+
+----------------------------------------------------
+
+107. You have given a list of subjects for student.Assume one classroom in required for 1 subject.How many classrooms are needed by all students.
+
+"python","java","c++","python","javascript",
+"java","python","java","c++","C"
+
+Answer1:
+set1 ={"python","java","c++","python","javascript"}
+set2={"java","python","java","c++","C"}
+s=set1.union(set2)
+print(s)
+o/p:{'C', 'java', 'python', 'c++', 'javascript'}
+
+Answer2:
+subject ={"python","java","c++","python","javascript",
+          "java","python","java","c++","C"}
+
+print(subject)
+print(len(subject))
+
+o/p:{'c++', 'C', 'javascript', 'java', 'python'}
+5
+
+---------------------------------------------------
+108.WAP to enter marks of 3 subjects from user and store them in a dictionary.Start with an empty dictionary &add onr by one .Use subject name as key &marks as value.
+
+marks={}
+x=int(input("Enter the Maths marks"))
+marks.update({"Maths":x})
+x=int(input("Enter the Phy marks"))
+marks.update({"Phy":x})
+x=int(input("Enter the Che marks"))
+marks.update({"Che":x})
+print(marks)
+print(type(marks))
+
+o/p:
+Enter the Maths marks23
+Enter the Phy marks23
+Enter the Che marks23
+{'Maths': 23, 'Phy': 23, 'Che': 23}
+<class 'dict'>
+
+--------------------------------------------------------
+109.Figure out way to store 9&9.0 as separate values in the set.
+(you can take help of built in data types)
+
+Answer1:
+values={9,"9.0"}
+print(values)
+o/p:{9, '9.0'}
+
+Answer2:#use it in the form of tuple
+values={
+    ("float",9.0),
+    ("int",9)
+}
+print(values)
+
+o/p:{('float', 9.0), ('int', 9)}
+----------------------------------------------------------------
+=>Loops:(while and For)
+Loops are used to repeat instructions.
+
+while loops
+   While condition:
+      #some work
+      
+110:
+count=1
+while count<=5:
+    print("hello")
+    count+=1
+print(count)
+o/p:
+hello
+hello
+hello
+hello
+hello
+6
+
+---------------------------
+111.
+i=1
+while i<=5:
+    print("hello",i)
+    i+=1
+o/p:hello 1
+hello 2
+hello 3
+hello 4
+hello 5
+------------------------
+112.Print numbers from 1 to 5
+i=0
+while i<=5:
+    print(i)
+    i+=1
+o/p:1
+2
+3
+4
+5
+-----------------------
+113.print number from 5 to 1
+ 
+i=5
+while i>=1:
+    print(i)
+    i-=1
+    
+solution2:    
+i = 5
+while i!=0:
+    print(i)
+    i -= 1    
+-------------------------------
+114.Example of infinite loop:
+
+i=5
+while i<6:
+    print(i)
+    i-=1
+print(i)   
+----------------------------------------
+115.Print numbers from 1 to 100
+
+i=1
+while i<=100:
+    print(i)
+    i+=1
+-------------------------------------
+116.Print numbers from 100 to 1
+
+i=100
+while i>=1:
+    print(i)
+    i-=1
+---------------------------------
+117.print multiplication of a number n.
+
+n=int(input("Enter the number"))
+i=1
+while i<=10:
+    print(n*i)
+    i+=1
+-----------------------------------------
+118.print the elements of the following list using a loop:
+[1,4,9,16,25,36,49,64,81,100]
+
+solution:
+nums =[1,4,9,16,25,36,49,64,81,100]
+idx=0
+while idx<len(nums):
+    print(nums[idx])
+    idx+=1
+--------------------------------------
+119  .Search for a number x in this tuple using loop:
+ (1,4,9,16,25,36,49,64,81,100)
+ 
+nums =(1,4,9,16,25,36,49,64,81,100)
+x=36
+i=0
+while i<len(nums):
+    if(nums[i]==x):
+        print("Found at idx",i)
+    else:
+        print("Finding")
+    i+=1
+o/p:
+Finding
+Finding
+Finding
+Finding
+Finding
+Found at idx 5
+Finding
+Finding
+Finding
+Finding 
+
+-------------------------------------
+ ==>Break and Continue 
+Break:used to terminate the loop when encountered
+
+Continue:terminates execution in the current iteration and continue execution of the loop with the next iteration 
+
+--------------------
+120:
+i=1
+while i<=5:
+    print(i)
+    if(i==3):
+        break
+    i+=1
+
+print("end of the loop")
+o/p:
+1
+2
+3
+end of the loop
+
+------------------------
+121.
+nums =(1,4,9,16,25,36,49,64,81,100)
+x=36
+i=0
+while i<len(nums):
+    if(nums[i]==x):
+        print("Found at idx",i)
+        break
+    else:
+        print("Finding")
+    i+=1
+print("end of loop")
+o/p:
+Finding
+Finding
+Finding
+Finding
+Finding
+Found at idx 5
+end of loop
+----------------------------------
+122.
+i=0
+while i<=5:
+    if (i==3):
+        i+=1
+        continue #skip
+    print(i)
+    i+=1
+o/p:
+0
+1
+2
+4
+5
+---------------
+123.
+i=0
+while i<=10:
+    if (i%2==0):
+        i+=1
+        continue #skip
+    print(i)
+    i+=1
+o/p:
+1
+3
+5
+7
+9
+---------------------- 
+FOR loop ;
+List=[1,2,4]
+for el in List:
+     print(el)
+
+FOR loop with else:
+
+for el in list:
+    print(el)
+else:
+    print("END")    
+
+----------------------
+124.
+nums=[1,2,3,4,5]
+for val in nums:
+    print(val)
+o/p:
+1
+2
+3
+4
+5 
+---------------------------
+125.
+str="Nazid"
+for el in str:
+    print(el)
+else:
+    print("end")
+o/p:
+N
+a
+z
+i
+d
+end    
+------------------------------
+126.Print the elements of the following list [1,4,9,16,25,36,49,64,81,100]using a loop:
+
+solution:
+nums=[1,4,9,16,25,36,49,64,81,100]
+for el in nums:
+    print(el)
+-----------------------------------
+127.Search for a number x in this tuple using loop:(linear Search)(1,4,9,16,25,36,49,64,81,100)
+
+nums=(1,4,9,16,25,36,49,64,81,100)
+x=16
+idx=0
+for el in nums:
+    if el==x:
+        print("Number Found at at isx",idx)
+        break
+    idx+=1
+o/p:Number Found at at idx 3    
+
+-----------------------------------
+range():Range functions returns a seq of number ,starting from 0 by default,and increments by 1 (by default) and stops before a specified number.
+
+range(start?,stop,step?)
+
+Eg:
+for el in range(5)
+for el in range(1,5)
+for el in range(1,5,2)
+    
+-----------------------------
+128.
+seq=range(5)
+for i in range(5):
+    print(i)    
+o/p:
+0
+1
+2
+3
+4
+------------------------------   
+129.Print even number below 100 using for loop.
+
+for i in range(2,100,2):
+    print(i)
+----------------------- 
+130.print number 1 to 100
+
+for i in range(1,100):
+    print(i)
+--------------------------
+131.print number 100 to 1
+
+for i in range(100,0,-1):
+    print(i)
+    
+--------------------------
+132.  Multiplication of number n
+
+n=int(input("Enter the number:"))
+for i in range(1,11):
+    print(n*i)
+
+----------------------------
+==>Pass Statement:Pass is a null statement that does nothing.It is used as a placeholder for future code.
+
+for i in range(5):
+    pass
+print("some useful work")
+o/p:some useful work
+
+--------------------------
+133.Print the sum of first n natural number.
+
+n=int(input("Enter the number"))
+sum=0
+for i in range(1,n+1):
+    sum+=i
+print(sum)
+
+o/p:Enter the number5
+15
+------------------------------
+134.Factorial of first n numbers .using while and for loops 
+ fact n =1*2*3    ...n
+ soln1:
+ n=5
+fact=1
+i=1
+while i<=n:
+    fact*=i
+    i+=1
+print("total sum=",fact)
+o/p:total sum= 120
+
+
+soln2:
+n=5
+fact=1
+for i in range(1,n+1):
+    fact*=i
+print("Factorail of n",fact)
+o/p:Factorail of n 120
+
+
+---------------------------------------
+135.Remove the dups in a list we can use set operation since Set does not allow dups
+
+q=[23,23,2,18,44,44]
+convert_set=set(q)
+print(convert_set)
+o/p:{2, 18, 44, 23}
+
+-----------------------------------------
+136.Set difference in python
+n={12,21,21,30}
+n1={"Nazid",12,21}
+print(n.difference(n1))
+o/p:{30}
+
+---------------------------------------
+==>Functions in python:
+Function are the block of code that performs a specific task
+ 
+def fun_name(param1,param2..):#function definition
+  #some work
+  return value
+fun_name(arg1,arg2..) #function call   
+ 
+137.
+def sum(a,b):
+    sum=a+b
+    return sum
+print(sum(2,3))
+
+o/p:5
+--------------------------------------
+
+138.
+def cal_sum(a,b):
+    sum=a+b
+    print(sum)
+    return sum
+cal_sum(10,11)
+cal_sum(14,12)
+o/p:21  
+    26
+    
+---------------------------------
+139.
+def print_hello():
+    print("hello")
+output=print_hello()
+print(output)  #if we done return anything its output automatically give none
+o/p:    
+hello
+None
+
+---------------------------------------
+140.#Average of 3numbers
+
+def calc_avg(a,b,c):
+    avg=(a+b+c)/3
+    print(avg)
+    return avg
+calc_avg(2,4,3)
+print(calc_avg)
+o/p:3.0
+
+--------------------------------------------------------
+Functions in Python
+
+Built-in Functions :print() len()    
+UserDefined Functions
+
+141.print statement in same line
+print("Nazid",end=" ")
+print("Shaik")
+o/p:Nazid Shaik       
+    
+--------------------------------
+142.Default Paramters in python
+
+def cal_prod(a=1,b=1):
+    print(a*b)
+    return a*b
+cal_prod()
+0/p:1
+
+143.
+def cal_prod(a,b=4):
+    print(a*b)
+    return a*b
+cal_prod(2)
+o/p:8
+
+144.Default values you must write at the backlogs
+
+def cal_prod(b,a=2):
+    print(a*b)
+    return a*b
+cal_prod(3)
+o/p:6
+
+---------------------------------------
+145.WAF the print the length of the list
+
+cities=["Hyderabad","Mumbai","chennai","Bengalore"]
+states=["Telangana","maharastra","Tamil nadu","Karnataka"]
+
+def len_list(list):
+    print(len(list))
+
+len_list(cities)
+len_list(states)
+o/p:4
+4
+--------------------------------------
+146.WAF to print the elements of a list in a single line
+
+cities=["Hyderabad","Mumbai","chennai","Bengalore"]
+states=["Telangana","maharastra","Tamil nadu","Karnataka"]
+def print_list(list):
+    for item in list:
+        print(item,end=" ")
+print_list(cities)
+print_list(states)
+o/p:Hyderabad Mumbai chennai Bengalore Telangana maharastra Tamil nadu Karnataka 
+    
+ -----------------------------------------
+147.#WAF to find the factorial of a number(n is the parameter)
+
+def cal_fact(n):
+    fact=1
+    for i in range(1,n+1):
+        fact*=i
+    print(fact)
+cal_fact(4)
+cal_fact(5)
+o/p:24
+    120
+-----------------------------------    
+148.WAF to convert us dollar to Indian rupees
+
+def converter(usd_value):
+    inr_val=usd_value*83
+    print(usd_value,"USD =",inr_val,"INR")
+converter(1)
+converter(96000)
+converter(100)
+o/p:
+1 USD = 83 INR
+96000 USD = 7968000 INR
+100 USD = 8300 INR
+-----------------------------------------
+-->Recursion:When a function calls itself repeatedly.
+Loops and Recursion are inter-related both can do same work most of the time
+
+def show(n):
+    print(n)
+show(5)
+#now this is basic function if I wanted to print 5 n,4 n-1,3 n-2,2 n-3 ,1 n-4
+
+#recursive function
+def show(n):
+    if (n==0):
+        return
+    print(n)
+    show(n-1)
+show(5)
+o/p:5
+4
+3
+2
+1
+-------------------------------
+
+fact(n)=fact(n-1)*n
+fact(n-1)=fact(n-2)*n
+5!=4! x 5
+3!=2! x 3
+
+-------------------
+149.
+def fact(n):
+    if (n==0 or n==1):
+        return 1
+    else:
+        return n*fact(n-1)
+print(fact(4))
+o/p:24
+----------------------------
+150.Write a recursive function to calculate the sum of first n natural number
+
+def cal_sum(n):
+    if (n==0):
+        return 0
+    return cal_sum(n-1)+n
+sum=cal_sum(10)
+print(sum)
+o/p:55
+-----------------------
+File I/O in python:
+Python can be used to perform operations on a file (read &write data)
+
+Types of files
+1.Text files :.txt,.docx,.log etc      
+2.Binary Files:.mp4,.mov,.png,.jpeg etc
+
+open,read and close file:we have to open a file before reading and writing.
+
+f=open("file_name","mode")
+#file_name can be like sample.txt,demo.docx   
+#mode = r:read mode w:write mode 
+data=f.read()
+f.close()
+
+operations:
+'r'  open for reading(default)
+'w'  open for writing,truncating the file first
+'x'  create a new file and open it for writing
+'a'  open for writing,appending to the end of the file if it exits
+'b'  binary mode
+'t'  text mode(default)
+'+'  open a disk file for updating(reading and writing)
+
+---------------------------------------------------------
+#file having   ==>I am Nazid and I am a sofware Engineer
+151.
+f=open("Nazid.txt", "r")
+data=f.read()
+print(data)
+print(type(data))
+f.close()
+o/p:I am Nazid and I am a sofware Engineer
+<class 'str'>
+
+152.
+f=open("Nazid.txt", "r")
+data=f.read(5)
+print(data)
+f.close()
+o/p:I am 
+
+#file having ==>I am Nazid and 
+              # I am a sofware Engineer
+              
+153.
+f=open("Nazid.txt", "r")
+data=f.readline()
+print(data)
+f.close()
+o/p:I am Nazid and
+
+------------------------------------    
+154.
+f=open("Nazid.txt", "r")
+line1=f.readline()
+print(line1)
+line2=f.readline()
+print(line2)
+f.close()
+o/p:
+I am Nazid and
+
+I am a sofware Engineer
+-----------------------------------  
+==>Writing to a file:
+f=open("demo.txt","w")
+f.write("this is a new line") #overwrites the entire line
+
+f=open("demo.txt","a")
+f.write("this is a new line") #add to the file 
+
+155.
+f=open("Nazid.txt","w")
+f.write("I want to learn JavaScript tomorrow")
+f.close()
+File o/p:#file data gets replaced with this txt
+I want to learn JavaScript tomorrowI don't know basics
+
+156.
+f=open("Nazid.txt","a")
+f.write("But I spend my time to learn")
+f.close()
+File 0/p:I want to learn JavaScript tomorrowI don't know basicsBut I spend my time to learn
+
+157.#create a file with is not exist earlier
+f=open("sample.txt","w")
+f.close()
+#This will create a new file 
+
+-----------------------------------
+Nazid.txt have ==>This is sample file
+158.
+f=open("Nazid.txt","r+")
+f.write("abc")
+f.close()
+Nazid.txt modified as==>abcs is sample file
+
+Summary:
+r+ ==>read+overide(pointer at start)  ==>no truncate
+w+ ==>read+overide(pointer at start)  ==>truncate
+a+ ==>read+append(pointer at end)     ==>no truncate
+
+------------------------------------
+With syntax:
+159.
+with open("sample.txt","r")as f:
+    data =f.read()
+    print(data)
+o/p:
+This is sample code
+By Nazid Shaik   
+
+160.
+with open("sample.txt","w") as f:
+    data=f.write("new data")
+o/p:new data    
+
+-------------------------
+->Deletng a File:using the OS module
+Module(like a code library) is a file written by another programmer that generally has a functions we can use
+
+import os
+os.remove(filename)
+
+161.
+import os
+os.remove("sample.txt")
+o/p:#remove sample.txt
+
+-------------------------------
+Q).Create a new file "practice.txt" using python.Add the following data in it:
+   Hi everyone
+   we are learning File I/O
+   using Java.
+   I like programming in Java.
+  
+A)162.
+with open("practice.txt","w") as f:
+    f.write("Hi everyone\nwe are learning File I/O\n")
+    f.write("using Java.\nI like programming in Java.")
+o/p:
+Hi everyone
+we are learning File I/O
+using Java.
+I like programming in Java.
+-----------------------------------    
+Q).WAF that replace all occurances of "Java" with "Python" in above file
+ 163.
+ with open("practice.txt","r") as f:
+    data=f.read()
+
+new_data=data.replace("Java","Python")
+print(new_data)
+
+with open("practice.txt","w") as f:
+    f.write(new_data)
+o/p:
+Hi everyone
+we are learning File I/O
+using Python.
+I like programming in Python.
+
+-----------------------------------
+Q).Search the word Learning exists in the file or not
+164.
+word="learning"
+with open("practice.txt","r") as f:
+    data=f.read()
+    if(data.find(word)!=-1):
+        print("Found")
+    else:
+        print("Not found")
+o/p:Found
+
+---------------------------------   
+Q)WAF to find in which line of the file does the word "Learning" occur first print -1 if word not found.
+165.
+def check_for_line():
+    word="learning"
+    data=True
+    line_no=1
+    with open("practice.txt","r") as f:
+        while data:
+            data=f.readline()
+            if(word in data):
+                print(line_no)
+            line_no+=1
+
+    return -1
+check_for_line()
+o/p:2
+
+-----------------------------------------
+Q)From a file containing numbers separated by comma,print the count of even number
+166.
+count=0
+with open("practice.txt","r") as f:
+    data=f.read()
+
+    nums= data.split(",")
+    for val in nums:
+        if(int(val)%2==0):
+            count+=1
+print(count)
+o/p:3  
+
+----------------------------------------
+OOP in Python:
+To map with real world scenarios,we started using objects in code.This is called objetc oriented programming.
+
+Class &Object in python:
+Class is a blueprint for creating objects.
+#creating class
+class Student:
+   name="Nazid Shaik"
+#creating object (instance)
+s1=Student()
+print(s1.name)  
+-----------------------------
+167.
+class Student:
+   name="Nazid Shaik"
+#creating object (instance)
+s1=Student()
+print(s1.name)
+s2=Student()
+print(s2.name)
+o/p:
+Nazid Shaik
+Nazid Shaik
+------------------------------------
+168.
+class Car:
+    color="blue"
+    brand="BMW"
+car1=Car()
+print(car1.color)
+print(car1.brand)
+o/p:
+blue
+BMW
+--------------------------------
+__init__function:
+
+Constructer 
+
+
+**************************************************************
+169.Python code to swap two numbers without different methods
+
+Method1:
+a,b=4,5
+a=a+b
+b=a-b
+a=a-b
+print(a,b)
+o/p:5,4
+
+Method2:
+a,b=4,5
+a,b=b,a
+print(a,b)
+o/p:5,4
+
+Method3:
+a,b=4,5
+a=a*b
+b=a/b
+a=a/b
+print(a,b)
+o/p:5.0 4.0
+
+Method4:
+a,b=4,5
+temp=a
+a=b
+b=temp
+print(a,b)
+o/p:5 4
+
+Method5:
+a,b=4,5
+a=a^b  
+b=a^b
+a=a^b
+print(a,b)
+o/p:5 4
+--------------------------------------------------
+170.Reverse a number in python
+
+Method1:
+n=int(input("enter the number"))
+while n>0:
+    r=n%10
+    print(r,end="")
+    n=n//10
+o/p:enter the number123
+321
+
+Method2:
+num=int(input("Enter the number"))
+num_str=str(num)
+print(num_str[::-1])    
+o/p:Enter the number123
+321
+
+-----------------------------------------------------------
+171.Fibonacci series  for some n number
+n=int(input("enter the number"))
+a=0 
+b=1 
+sum=0
+count=0
+print("Fibonacci series",end=" ")
+while count<=n:
+    print(sum,end=" ")
+    count+=1 
+    a=b 
+    b=sum 
+    sum=a+b 
+o/p:    
+enter the number
+10
+Fibonacci series 0 1 1 2 3 5 8 13 21 34 55 
+--------------------------------------------------------    
+172.Check number is palindrome or not
+
+n=int(input("Enter the number"))
+n1=str(n)
+n_new=str(n)[::-1]
+if n1==n_new:
+    print("palindrome")
+else:
+    print("not palindrome")
+o/p:    
+Enter the number
+1234
+not palindrome    
+
+------------------------------------------------------
+173.remove the duplicates in this string
+
+a="The string are strings are"
+y=a.split()
+k=[]
+for i in y:
+    if i not in k:
+        k.append(i)
+m=" ".join(k)        
+print(m)        
+O/p: The string are strings  
+
+Process2:
+a="The python is great,the sql is The greatest"
+y=a.split()
+k=[]
+for i in y:
+    if i not in k:
+        k.append(i)
+m=" ".join(k)        
+print(m)  
+o/p:The python is great,the sql greatest
+--------------------------------------------------------            
+ 174.Replace Null fields with before letters
+
+l=["A","B","Null","Null","Null","C","Null","Null","D","Null"]
+for i in range(len(l)):
+    if l[i]=="Null":
+        l[i]=l[i-1]
+print(l)
+
+------------------------------------------------------------
+175.Count of vowels in list
+
+a=["Naresh","Mahesh","laptop","raki"]
+b=["a","e","i","o","u"]
+for i in a:
+    c=0
+    for j in i:
+        if j in b:
+            c=c+1
+    print(f"{i}:count of vowels is {c}")
+o/p:
+Naresh:count of vowels is 2
+Mahesh:count of vowels is 2
+laptop:count of vowels is 2
+raki:count of vowels is 2
+
+---------------------------------------------------    
+ 176.
+l="The the LOvely poem POEM is AND IS great Great GREAT and  ANd  LOVEly LoVEly"
+# input(list)
+
+# o/p:"THE POEM IS GREAT AND LOVELY"
+b=l.split()
+c=[]
+for i in b:
+    if i.upper() not in c:
+        c.append(i.upper())
+a=" ".join(c)
+print(a)  
+
+----------------------------------------------------------
+177.Remove the special character
+s="I Am very,Good boy! in this school."
+k=s.split()
+c=[]
+print(k)
+for i in k:
+    d=[]
+    for j in i:
+        if j==',' or j=='!' or j==".":
+            c.append(j)
+        else:
+            d.append(j)
+            
+            
+    print( "".join(d),end=" ")     
+        
+     
+ans2:
+
+s = "I Am very,Good boy! in this school."
+k = s.split()  # Split the sentence into words
+
+
+print(k)  # Print the list of words
+
+for i in k:
+    d = [] 
+    c=[]# List to hold special characters in the current word
+    for j in i:
+        if j.isalnum():  # Check if it's an alphanumeric character
+            d.append(j)  # Append alphanumeric characters to c (if required)
+        else:
+            c.append(j)  # Append special characters to d
+    
+    print("".join(d), end=" ")  # Print special characters in each word
+    
+-----------------------------------------------------------
+178.Print missing number using while and if loop
+a=[1,2,4,5,6,7,10]
+d=1
+while d<10:
+    if d not in a:
+        
+        print(d)
+    d=d+1    
+
+---------------------------------------------------------
+179.Count the vowel alphabets
+k="Spaicalrrrtt2ab23rtAuuUE"
+m=["A","E","I","O","U"]
+c=[]
+for i in k:
+    if i.upper() in m:
+        c.append(i)
+print(c)
+for j in m:
+    s=0
+    for f in c:
+        if f.upper()==j:
+            s=s+1
+    print(f"{j}:{s}")
+    
+===========================================================
+=====================================================
+180.
+a=["Kiran1","Nari2","midhun3"]
+k=[]
+for i in a:
+    b=[]
+    
+    for j in i:
+        if j.isdigit():
+            k.append(j)
+        else:
+            b.append(j)
+    p="".join(b)  
+    print(p*int(j))   
+    
+ -------------------------------------------------------------
+ 181.sample input CDC in string needs to find the count 
+a="ABCDCDC"
+b="CDC"
+c=0
+for i in range(0,len(a)):
+    if b==a[i:len(b)+i]:
+        
+        c=c+1 
+print(c) 
+            
+====================================
+182.
+S = "There are 4apples and 3bananas"
+
+# Split the string into words
+k = S.split()
+numbers = []
+words_with_numbers = []
+
+# Extract numbers and corresponding words
+for word in k:
+    if any(char.isdigit() for char in word):
+        numbers.append(word[0])  # Get the number (first character)
+        words_with_numbers.append(word[1:])  # Get the rest of the word
+print(words_with_numbers)
+
+# Reverse the numbers list for swapping
+numbers = numbers[::-1]
+
+# Reconstruct the new string
+modified_string = ""
+for i in range(len(k)):
+    print(k[i])
+    if any(char.isdigit() for char in k[i]):
+        modified_string += numbers.pop(0) + words_with_numbers.pop(0) + " "
+    else:
+        modified_string += k[i] + " "
+
+# Print the final modified string
+print(modified_string.strip())
+
+o/p:There are 3apples and 4bananas
+============================================================
+183.
+count number of occurance of numbers in list:
+
+
+l = [1,1,2,3,5,5,3]
+u= []
+count = []
+for e in l:
+    if e not in u:
+        u.append(e)  
+        count.append(1)  
+    else:
+        index = u.index(e)  
+        count[index] += 1  
+
+for i in range(len(u)):
+    print(f"Count of {u[i]}: {count[i]}")
+	
+	
+=====================================================================
+184.
+for i in range(1,10):
+    print("\t")
+    for j in range(1,10):
+        
+        if j<=i:
+            
+            print(j,end="")
+o/p:
+1	
+12	
+123	
+1234	
+12345	
+123456	
+1234567	
+12345678	
+123456789		
+
+------------------------------------------------------------------------------------
+185.
+# i/p: AABBBCCCCDAAAAA
+# o/p: A2B3C4DA5
+from itertools import groupby
+
+def encode_logic(string):
+    return '\t'.join(f"{char} {len(list(group))}" for char,group in groupby(string))
+   
+a="AABBBCCCCDAAAAA" 
+output=encode_logic(a)
+print(output)
+
+----------------------------------Practise queestions--------------------------
+186.
+x = "awesome"
+def myfunc():
+  global x
+  x = "fantastic"
+myfunc()
+print("Python is " + x)
+0/p: Python is good and Fantastic
+---------------------------------------------------------------------
+187.
+x = "awesome"
+def myfunc():
+  x="good"
+  print("Python is " + x)
+myfunc()
+print("Python is " + x)
+o/p:
+Python is good
+Python is awesome
+
+--------------------------------------------------------------------------------
+188.
+import random
+a=random.randrange(1,10)
+print(a)
+o/p:#will print random numbers
+-------------------------------------------------------------------------------
+189.
+for x in "banana":
+  print(x)
+o/p:banana
+------------------------------------------------------------------------------
+190.
+txt= "The best friends,"
+print("best" in txt)
+o/p:True
+
+txt= "The best friends,"
+if "best" in txt:
+    print("free! in text")
+o/p:free! in text   
+
+
+txt = "The best things in life are free!"
+if "expensive" not in txt:
+  print("No, 'expensive' is NOT present.")
+o/p: No, 'expensive' is NOT present.
+
+txt = "The best things in life are free!"
+print("expensive" not in txt)
+o/p:True 
+
+--------------------------------------------------------------------------------
+191.
+a = " Hello, World! "
+print(a.strip()) 
+o/p:Hello, World!
+
+txt="Hello! world ,I am from India"
+a=txt.replace("world","hi")
+print(a)
+o/p:Hello! hi ,I am from India
+------------------------------------------------------------------------------
+192.
+a=23
+txt=f"My name is Nazid i have  age {a:.2f}"
+print(txt)
+o/p:My name is Nazid i have  age 23.00
+
+a=23
+b="good"
+txt="My name is Nazid i have  age {a:.2f} and he is{b}".format(a=a,b=b)
+print(txt)
+o/p:My name is Nazid i have  age 23.00 and he is good
+
+193.#Escape Characters
+
+txt = "It\'s alright" 
+print(txt)
+o/p:It's alright
+
+txt = "It\\'s alright" 
+print(txt)
+o/p:It\'s alright
+
+txt = "Hello\nWorld"
+print(txt)
+o/p:
+Hello
+World
+
+txt = "Hello\rworld"
+print(txt)
+o/p:
+Hello
+world
+
+txt = "Nazid\tPython\tProgrammer"
+print(txt) 
+o/p:Nazid	Python	Programmer
+
+----------------------------------String Operations-------------------------------
+194.
+a="Nazid shaik"
+b=a.casefold()
+print(b)
+o/p:nazid shaik
+
+a="nazid shaik"
+b=a.capitalize()
+print(b)
+o/p:Nazid shaik
+
+txt = "banana"
+x = txt.center(10)
+print(x)
+o/p:  banana  
+
+txt = "banana"
+x = txt.center(10,"O")
+print(x)
+o/p:OObananaOO
+
+
+----------------------------  Python Practise Season- 2  -------------------------------------------------
+
+python practice 2:
+
+light=input("enter the colour of light")
+if(light=="red"):
+    print("please stop the vehicle")
+elif(light=="orange"):
+    print("please ready the vehicle")
+elif(light=="green"):
+    print("you can move the vehicle from the signal")
+else:
+    print("light is not working")
+output:	enter the colour of light 
+green 
+you can move the vehicle from the signal
+
+------------------------------------------------------------------------------
+marks=int(input("enter the marks"))
+if(marks>=90):
+    print("you have got O grade")
+elif(marks<90  and marks>=80):
+    print("you have got A grade")
+elif(marks<80 and marks>=70):
+    print("you have got B or below grade")
+else:
+    print("you haven't written the exam")
+output:enter the marks 
+90
+you have got O grade
+
+-------------------------------------------------------------------------------
+Food=input("enter the food:")
+print("sweet") if Food=="jalebi" or Food=="julabjamun" else print("not sweet")
+output:enter the food:
+jalebi
+sweet
+
+---------------------------------------------------------------------------------
+food=input("food:")
+eat="yes" if food=="sweet" else "no"
+print(eat)
+o/p:food:  
+sweet
+yes
+
+---------------------------------------------------------------------------------
+
+age=int(input("enter the age"))
+vote=("no","yes")[age>=18]
+print(vote)
+0/p:enter the age
+21
+yes
+
+--------------------------------------------------------------------------------
+
+a="23"
+b=5
+c=int(a)
+z=print(b+c)
+print(type(z))
+o/p:28
+<class 'NoneType'>
+
+----------------------------------------------------------------------------------
+
+a=int(input("enter the number1"))
+b=int(input("enter the number2"))
+print("True") if a>=b else print("False")
+
+----------------------------------------------------------------------------------
+
+a=int(input("enter the age"))
+if a>18:
+    if a>=80:
+        print("you cannot drive")
+    else:
+        print("you can drive")
+else:
+    print("you cannot drive")
+o/p:enter the age 
+17
+you cannot drive
+
+-----------------------------------------------------------------------------------
+friend=5
+friend -=2
+print(friend)
+o/p:3
+---------------------------------------------------------------------------------
+	
+import math
+a=float(input("Enter the side A: "))
+b=float(input("Enter the side B: "))
+c=math.sqrt(pow(a,2)+pow(b,2))
+print(f"Side C: {c}")
+o/p:
+Enter the side A: 3
+Enter the side B: 4
+Side C: 5.0
+
+------------------------------------------------------------------------------------
+
+import math
+y=-4
+z=12.1
+k=abs(y)
+print(k)
+a=math.ceil(z)
+j=math.floor(z)
+print(a)
+print(j)
+a1=16
+a2=math.sqrt(a1)
+print(a2)
+o/p:
+4
+13
+12
+4.0
+
+----------------------------------------------------------------------------------------
+	
+import math
+radius= float(input("Enter the radius of the circle: "))
+circumference = 2 * math.pi * radius
+print(f"circumference of the circle: {circumference}")
+area=math.pi * pow(radius,2)
+print(f"Area of the circle : {area}")
+
+o/p:Enter the radius of the circle: 10
+circumference of the circle: 62.83185307179586
+Area of the circle : 314.1592653589793
+
+-------------------------------------------------------------------------------------------
+
+
+           
+    
+      
+    
+    
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
 
