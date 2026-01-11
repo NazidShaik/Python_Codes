@@ -129,3 +129,321 @@ o/p:
 Enter the radius of the circle: 10
 circumference of the circle: 62.83185307179586
 Area of the circle : 314.1592653589793
+
+------------------------------------------------------------------------------------------------
+
+name=input("Enter the number")
+if name=="":
+    print("You haven't entered the number")
+else:
+    print("You have entered the number")
+    
+o/p:Enter the number
+You haven't entered the number
+
+------------------------------------------------------------------------------------------------
+
+for_sale =True
+if for_sale:
+    print("The item is available for the sale")
+else:
+    print("The item is not for the sale")
+o/p:The item is available for the sale
+
+------------------------------------------------------------------------------------------------
+
+online= False
+if online:
+    print("You are online")
+else:
+    print("You are not online")
+
+o/p: You are not online 
+
+------------------------------------------------------------------------------------------------
+
+#ATM withdrawal simulation
+
+balance=10000
+withdraw=int(input("Enter the amount you wanted to withdraw "))
+if withdraw<=balance and withdraw>=100:
+    if withdraw%100 ==0:
+        balance-=withdraw
+        print(f"Transaction succuess!Your current available balance : {balance}")
+    else:
+        print("Unable to Transact,Error:Please enter the multiple of 100's")
+
+elif withdraw==0:
+    print("Withdraw amount cannot be zero ,Enter the multiples of 100's")
+else:
+    print("Withdraw amount exceeds cannot be more the current balance")
+
+
+o/p1:Enter the amount you wanted to withdraw 0
+Withdraw amount cannot be zero ,Enter the multiples of 100's
+o/p2:Enter the amount you wanted to withdraw1200
+Transaction succuess!Your current available balance : 8800
+
+--------------------------------------------------------------------------------------------------
+
+#Simple Calculator 
+
+math_operator =input("Enter the math operation you wanted to do +,-,*,/ ")
+num1=int(input("Enter the number 1 "))
+num2=int(input ("Enter the number 2 "))
+if math_operator=="+":
+    print(f"sum:",num1+num2)
+elif math_operator == "-":
+    print(f"Sub:" ,num1-num2)
+
+elif math_operator == "*":
+    print(f"mul :", num1*num2)
+elif math_operator == "/":
+    print(f"Div:",num1/num2)
+else:
+    print("enter the valid value")
+    
+o/p:Enter the math operation you wanted to do +,-,*,/ *
+Enter the number 1 3
+Enter the number 2 12
+mul : 36
+
+---------------------------------------------------------------------------------------------------------
+#Temparture unit conversion Program 
+
+Unit=input("Is the Temparature in which unit ? C/F")
+temperature=int(input("Enter the temparature"))
+if Unit == "C":
+    temperature=(temperature*9/5)+32
+    print(f"temparature in F is : {temperature}")
+if Unit == "F":
+    temparature =(temparature - 32) * (5/9)
+    print(f"temparature in C is : {temparature}")
+
+o/p:Is the Temparature in which unit ? C/FC
+Enter the temparature37
+temparature in F is : 98.6
+
+-----------------------------------------------------------------------------------------------------------
+
+num1=-25
+num2=23
+print("Positive" if num1 > 0 else "Negative")
+print("Positive" if num2 > 0 else "Negative")
+
+o/p:Negative
+Positive
+
+-----------------------------------------------------------------------------------------------------------
+num=-15
+result="Even" if num%2==0 else "Odd"
+print(result)
+o/p:Odd
+
+-----------------------------------------------------------------------------------------------------------
+
+a=2
+b=3
+max_num=a if a>b else b
+min_num=a if a<b else b
+print(max_num)
+print(min_num)
+
+---------------------------------------------------------------------------------------------------------
+age=24
+status= "Adult" if age >18 else "Child"
+print(status)
+o/p:Adult
+
+-----------------------------------String Operations--------------------------------------------------------
+
+name="nazidNNaik"
+#a=len(name)
+#a=name.find("z")     "give the index of first element"
+#a=name.rfind("a")    "give the index of element from the back"
+#n=name.capitalize()  "convert first letter into capital and also turn other things small"
+#l=name.upper()        "makes string into upper case letters"
+#l=name.lower()         "makes the string into lower case letters"
+#k=l.isdigit()          "check if string contains integers and return True in all are number"
+#k=name.isalpha()        "check if string contains only the alphabets and return true"
+#l=name.count("a")       "give the count of letters"
+ph="919704238642"
+a=ph.replace("91","0")          #replace the older element with the new element
+print(a)
+
+--------------------------------------------------------------------------------------------------------
+
+name="Nazid_Shaik"
+#a=name.title()           #converts the only first characters of stting to capital
+#a=name.swapcase()          # Swaps case of each letter  Nazid_Shaik ->nAZID_sHAIK
+---------------------------------------------------------------------------------------------------------
+
+username="nazid1332"
+l=username.isalnum()
+a=username.startswith("n")
+b=username.endswith("3")
+z=username.isdigit()
+k=username.isalpha()
+
+print(k)
+
+-----------------------------------------------------------------------------------------------------------
+name="   nazid    "
+#a=name.rstrip()           #strip removes the spaces
+#a=name.strip()
+#a=name.lstrip()
+print(a)
+ ---------------------------------------------------------------
+
+name="Nazid shaik"
+#a=name.split("h")   ['Nazid s', 'aik']
+#a=name.split("a")    ['N', 'zid sh', 'ik']
+# a=name.split()        ['Nazid', 'shaik']
+# a=name.split("i")      ['Naz', 'd sha', 'k']
+
+-----------------------------------------------------------------
+
+username=input("enter the username")
+if len(username)>12:
+    print("username contains more than 12 characters")
+elif not username.find(" ")==-1:
+    print("Username cannot the spaces")
+elif not username.isalpha():
+    print("user name cannot contain numbers")
+else:
+    print(f'welcome {username}')
+    
+o/p:enter the usernamenaz1
+user name cannot contain numbers    
+
+-------------------------------------------------------------------------------------------------------------
+name="Nazid shaik"
+age=12
+height=175
+format="name:{0} height:{1}".format(name,height)
+print(format)
+p1="name:{} age:{} height:{}".format(name,age,height)
+print(p1)
+
+o/p:
+name:Nazid shaik height:175
+name:Nazid shaik age:12 height:175
+
+-----------------------------------------------------------------------------------------------------------
+a="12345"
+num=a.zfill(10)
+num2=a.zfill(6)
+print(num)
+o/p:0000012345
+012345
+---------------------------------------------------------------------------------------------------------
+
+name="Nazid_Shaik"
+n="nazid\nshaik"
+v=name.splitlines()
+print(v)
+print(n)
+
+o/p:['Nazid_Shaik']
+nazid
+shaik
+
+----------------------------------------------------------------------------------------------------------
+
+name="Nazid_Shaik"
+a=name.partition("d")
+b=name.partition("_")
+print(a)
+print(b)
+
+o/p:('Nazi', 'd', '_Shaik')
+('Nazid', '_', 'Shaik')
+
+----------------------------------------------------------------------------------------------------------
+credit_card="12345678923213"
+print(credit_card[::3])
+print(credit_card[::2])
+print(f"XXXX-XXXX-XXXX-{credit_card[-4:]}")
+o/p:14721
+1357931
+XXXX-XXXX-XXXX-3213
+
+--------------------------------------------------------------------------------------------------------
+email=input("enter the email")
+user_name=email[:email.index("@")]
+domain=email[email.index("@")+1:]
+print("you user name is : {} and your domain is {}".format(user_name,domain))
+
+o/p:enter the emailnazi@gmail.com
+you user name is : nazi and your domain is gmail.com
+
+------------------------------------------------------------------------------------------------------------
+price1= 3.134433
+price2=-9.9912
+price3=8.99182
+print(f"price 1 is {price1:.2f}")
+print(f"price 2 is {price2:.2f}")
+print(f"price 3 is {price3:.2f}")
+print(f"price 1 is {price1:.3f}")
+print(f"price 2 is {price2:.3f}")
+print(f"price 3 is {price3:.3f}")
+o/p:price 1 is 3.13
+price 2 is -9.99
+price 3 is 8.99
+price 1 is 3.134
+price 2 is -9.991
+price 3 is 8.992
+--------------------------------------------------------------------------------------------
+###########while loop###################################
+name=input("Enter the name")
+while name=="":
+  print("please didn't enter the name")
+  name=input("Enter the name")
+else:
+  print(f"your entered the name: {name}")
+o/p:Enter the name
+please didn't enter the name
+Enter the name
+please didn't enter the name
+Enter the name  
+
+----------------------------------------------------------------------------------------------
+age=int(input("Enter your age"))
+while age<0:
+  print("please can't be valid age")
+  age=int(input("Enter the age"))
+print(f"your {age} years old")
+
+0/p:Enter your age-1
+please can't be valid age
+Enter the age
+
+-----------------------------------------------------------------------------------------------
+food=input("Enter the food you like (q to quit):")
+while not food=="q":
+  print(f"You like {food}")
+  food=input("Enter the food you like (q to quit)")
+
+print("bye") 
+ 
+o/p:Enter the food you like (q to quit):dosa
+You like dosa
+Enter the food you like (q to quit)pizza
+You like pizza
+Enter the food you like (q to quit)q
+bye
+
+------------------------------------------------------------------------------------------------
+
+num=int(input("Enter a number in between 1-10: "))
+while num<1 or num>10:
+  print(f"Number is {num}")
+  num=int(input("Enter the number in range 1-10: "))
+print(f"Your number is {num}")
+
+0/p:Enter a number in between 1-10: 55
+Number is 55
+Enter the number in range 1-10: 2
+Your number is 2
+
+
