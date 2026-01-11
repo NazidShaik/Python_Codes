@@ -1,6 +1,6 @@
 length =float(input("Enter the length"))
-b=float(input("Enter the breadth"))
-area= length*b
+breadth=float(input("Enter the breadth"))
+area= length*breadth
 print("Area of rectanagle",area)
 
 o/p:
@@ -8,3 +8,6 @@ length =float(input("Enter the length"))
 b=float(input("Enter the breadth"))
 area= length*b
 print("Area of rectanagle",area)
+
+===============================================
+
