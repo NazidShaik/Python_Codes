@@ -1,0 +1,131 @@
+python practice 2:
+
+light=input("enter the colour of light")
+if(light=="red"):
+    print("please stop the vehicle")
+elif(light=="orange"):
+    print("please ready the vehicle")
+elif(light=="green"):
+    print("you can move the vehicle from the signal")
+else:
+    print("light is not working")
+output:	enter the colour of light 
+green 
+you can move the vehicle from the signal
+
+------------------------------------------------------------------------------
+marks=int(input("enter the marks"))
+if(marks>=90):
+    print("you have got O grade")
+elif(marks<90  and marks>=80):
+    print("you have got A grade")
+elif(marks<80 and marks>=70):
+    print("you have got B or below grade")
+else:
+    print("you haven't written the exam")
+output:enter the marks 
+90
+you have got O grade
+
+-------------------------------------------------------------------------------
+Food=input("enter the food:")
+print("sweet") if Food=="jalebi" or Food=="julabjamun" else print("not sweet")
+output:enter the food:
+jalebi
+sweet
+
+---------------------------------------------------------------------------------
+food=input("food:")
+eat="yes" if food=="sweet" else "no"
+print(eat)
+o/p:food:  
+sweet
+yes
+
+---------------------------------------------------------------------------------
+
+age=int(input("enter the age"))
+vote=("no","yes")[age>=18]
+print(vote)
+0/p:enter the age
+21
+yes
+
+--------------------------------------------------------------------------------
+
+a="23"
+b=5
+c=int(a)
+z=print(b+c)
+print(type(z))
+o/p:28
+<class 'NoneType'>
+
+----------------------------------------------------------------------------------
+
+a=int(input("enter the number1"))
+b=int(input("enter the number2"))
+print("True") if a>=b else print("False")
+
+----------------------------------------------------------------------------------
+
+a=int(input("enter the age"))
+if a>18:
+    if a>=80:
+        print("you cannot drive")
+    else:
+        print("you can drive")
+else:
+    print("you cannot drive")
+o/p:enter the age 
+17
+you cannot drive
+
+-----------------------------------------------------------------------------------
+friend=5
+friend -=2
+print(friend)
+o/p:3
+---------------------------------------------------------------------------------
+	
+import math
+a=float(input("Enter the side A: "))
+b=float(input("Enter the side B: "))
+c=math.sqrt(pow(a,2)+pow(b,2))
+print(f"Side C: {c}")
+o/p:
+Enter the side A: 3
+Enter the side B: 4
+Side C: 5.0
+
+------------------------------------------------------------------------------------
+
+import math
+y=-4
+z=12.1
+k=abs(y)
+print(k)
+a=math.ceil(z)
+j=math.floor(z)
+print(a)
+print(j)
+a1=16
+a2=math.sqrt(a1)
+print(a2)
+o/p:
+4
+13
+12
+4.0
+
+----------------------------------------------------------------------------------------
+import math
+radius= float(input("Enter the radius of the circle: "))
+circumference = 2 * math.pi * radius
+print(f"circumference of the circle: {circumference}")
+area=math.pi * pow(radius,2)
+print(f"Area of the circle : {area}")
+o/p:
+Enter the radius of the circle: 10
+circumference of the circle: 62.83185307179586
+Area of the circle : 314.1592653589793
