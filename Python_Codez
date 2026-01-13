@@ -11,3 +11,16 @@ print("Area of rectanagle",area)
 
 ===============================================
 
+item=input("Enter the item you wanted to buy: ")
+price=int(input("Enter the price: "))
+quantity=int(input("Enter the quantity: "))
+total=price*quantity
+print(f"You have bought  {quantity}*{item}")
+print(f"Total payable amount {total}")
+
+o/p:
+Enter the item you wanted to buy: Pizza
+Enter the price: 235
+Enter the quantity: 3
+You have bought  3*Pizza
+Total payable amount 705
