@@ -26,5 +26,57 @@ You have bought  3*Pizza
 Total payable amount 705
 
 ===============================================
+##SIMPLE MATH ##
 
+a=-3
+b=abs(a)
+print(b)
+c=min(2,3,4)
+d=max(2,2,4)
+print(f"min{c}")
+print("max",d)
+z=3.12
+q=round(z)
+print(q)
+k=pow(4,2)
+print("power",k)
 
+o/p:
+3
+min2
+max 4
+3
+power 16
+
+================================================
+
+import math
+print(math.pi)
+print(math.e)
+
+o/p:
+3.141592653589793
+2.718281828459045
+
+===============================================
+import math
+a=9.2
+print(math.ceil(a))
+print(math.floor(a))
+
+o/p:
+10
+9
+=============================================
+
+## hypotenuse of right angle triangle
+import math
+A = float(input("Enter the side A "))
+B = float(input("Enter the side B "))
+C=math.sqrt(pow(A,2) + pow(B,2))
+print("Hypotenuse",C)
+
+o/p:
+Enter the side A 3
+Enter the side B 4
+Hypotenuse 5.0
