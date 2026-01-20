@@ -128,3 +128,33 @@ else:
 
 o/p:
 Item is NOT for sale
+
+==========================================
+
+
+operator=input("Enter the math operator (+,-,*,/): ")
+num1=float(input("Enter the num1 "))
+num2=float(input("Enter the num2 "))
+if operator=="+":
+    result=num1+num2
+    print(round(result,3))
+elif operator=="-":
+    result=num1-num2
+    print(round(result,3))
+elif operator=="*":
+    result=num1*num2
+    print(round(result,3))
+elif operator=="/":
+    result=num1/num2
+    print(round(result,3))
+else:
+    print("Enter the valid operator")
+
+o/p:
+
+Enter the math operator (+,-,*,/): /
+Enter the num1 435
+Enter the num2 34
+12.794
+
+=================================================
