@@ -80,3 +80,51 @@ o/p:
 Enter the side A 3
 Enter the side B 4
 Hypotenuse 5.0
+
+==========================================
+##If statements
+age=int(input("Enter the age"))
+if age>=18:
+    print("You are signed up")
+elif age<0:
+    print("You haven't yet born!")
+else:
+    print("You need be 18+ to signup")
+
+o/p:Enter the age19
+You are signed up
+
+==========================================
+
+response=input("Would you like some food (Y/N) ")
+if response=="Y":
+    print("We can try eating cake!")
+else:
+    print("Lets eat after sometime! ")
+
+o/p:
+Would you like some food (Y/N) N
+Lets eat after sometime! 
+
+===========================================
+
+name=input("Enter the name ")
+if name =="":
+    print("You did not enter your name")
+else:
+    print(f"Hello! {name}")
+
+o/p:
+Enter the name 
+You did not enter your name
+
+=========================================
+
+for_sale= False
+if for_sale:
+    print("Item is for sale")
+else:
+    print("Item is NOT for sale")
+
+o/p:
+Item is NOT for sale
