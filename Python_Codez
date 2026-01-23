@@ -158,9 +158,7 @@ Enter the num1 435
 Enter the num2 34
 12.794
 
-=================================================
-
-## weight conversion ##
+=======## weight conversion ##==========================================
 
 weight=int(input("Enter the weight "))
 unit=input("Weight in Kilogram or Pound (K or L) ")
@@ -214,7 +212,21 @@ o/p:
 Its WARM outside
 Its Sunny 
 
+=========Conditional Operator(Ternary Operator)=============================================
+
+num=6
+result =("Even" if num%2==0 else "OOD")
+print(result) 
+o/p:Even
+
 ======================================================
+num=6
+print("Postive" if num>0 else "Negative")
+o/p:
+Postive
+====================================================
+
+
 
 
 
