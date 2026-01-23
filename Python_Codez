@@ -159,3 +159,24 @@ Enter the num2 34
 12.794
 
 =================================================
+
+## weight conversion ##
+
+weight=int(input("Enter the weight "))
+unit=input("Weight in Kilogram or Pound (K or L) ")
+if unit=="K":
+    weight=weight*2.205
+    print(f"Your weight in Pounds {weight}")
+elif unit=="L":
+    weight=weight/2.205
+    print(f"Your weight in Kilograms {weight}")
+    
+else:
+    print("Please enter the valid unit")
+
+o/p:
+Enter the weight 23
+Weight in Kilogram or Pound (K or L) K
+Your weight in Pounds 50.715
+
+
