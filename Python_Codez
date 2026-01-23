@@ -180,3 +180,41 @@ Weight in Kilogram or Pound (K or L) K
 Your weight in Pounds 50.715
 
 
+=================================================
+#Logical Operator OR :if any of condition is true the return True
+
+temp=25
+is_raining=False
+if temp>35 or temp<0 or is_raining:
+    print("The outdoor event has been cancelled")
+else:
+    print("The outdoor event starts in 5min")
+
+o/p:
+The outdoor event starts in 5min
+
+=====================================================
+# AND ,NOT conditional Operators
+
+temp=20
+is_sunny=True
+if temp>28 and is_sunny:
+    print("Its HOT outside")
+    pritn("Its Sunny")
+elif temp<0 and not is_sunny:
+    print("Its cold outside")
+    print("Its COOL")
+elif 28>temp>0 and is_sunny:
+    print("Its WARM outside")
+    print("Its Sunny ")
+else:
+    print("Not weather report actually")
+
+o/p:
+Its WARM outside
+Its Sunny 
+
+======================================================
+
+
+
