@@ -397,12 +397,17 @@ o/p:
 
 ========================================
 
+credit_card="1234-5678-9012-3456"
+k=credit_card[-4:]
+print(k)
+o/p:3456
+=======================================
 
+credit_card="1234-5678-9012-3456"
+last_digit=credit_card[-4:]
+print(f"XXXX-XXXX-XXXX-{last_digit}")
 
-
-
-
-
+o/p:XXXX-XXXX-XXXX-3456
 
 
 
