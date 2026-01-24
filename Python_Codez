@@ -280,6 +280,102 @@ o/p:
 
 ===================================================
 
+name="nazid shaik"
+result=name.capitalize()
+print(result)
+
+result1=name.upper()
+print(result1)
+
+result2=name.lower()
+print(result2)
+
+o/p:
+
+Nazid shaik
+NAZID SHAIK
+nazid shaik
+
+================================================
+
+name="Vimal"
+a=name.isdigit()   # returns true if string only contains digit else return False
+print(a
+o/p: False
+
+name="1234"
+a=name.isdigit()
+print(a)
+
+o/p: True
+
+===============================================
+
+name="1234"
+b="Nazid Shaik"
+c="bro"
+a=name.isalpha()  #isalpha return True if all the alphabetic else return False even space it will return False
+b=b.isalpha()
+c=c.isalpha()
+print(a)
+print(b)
+print(c)
+
+o/p:
+False
+False
+True
+=============================================
+
+phone_number=input("Enter the phone number: ")
+a=phone_number.count("-")
+print(a)
+o/p:
+Enter the phone number: 1-234-56-789
+3
+============================================
+
+phone=input("Enter the phone number: ")
+n=phone.replace("-","")
+print(n)
+
+o/p:
+Enter the phone number: 1-234-898
+1234898
+============================================
+
+# Exercise Validate your user input
+# Username cannot contain more than 12 characters
+# username cannot contain spaces
+# username cannot contain digits
+
+user_name=input ("Enter the username ")
+if len(user_name)>12:
+    print("Your username can't contain more than 12 characters")
+elif not user_name.find(" ") == -1:
+    print("Your username can't have spaces")
+elif not user_name.isalpha():
+    print("Your username can't have digits")
+else:
+    print(f"Welcome {user_name}")
+
+o/p1:
+Enter the username 123
+Your username can't have digits
+
+o/p2:
+Enter the username Nazid
+Welcome Nazid
+
+=====================================
+
+
+
+
+
+
+
+
 
 
 
