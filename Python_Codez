@@ -226,6 +226,69 @@ o/p:
 Postive
 ====================================================
 
+a=7
+b=5
+max_num = a if a>b else b
+min_num = b if a<b else b
+print(max_num)
+print(min_num)
+o/p:
+7
+5
+====================================================
+
+age=19
+print("Adult" if age>=18 else "Minor")
+o/p: Adult
+===================================================
+
+user_role=input ("Enter the role: ")
+access_level="Full Access" if user_role=="Admin" else "Limited Access"
+print(access_level)
+
+o/p1:Enter the role: Admin
+Full Access
+o/p2:
+Enter the role: guest
+Limited Access
+
+=============String Methods====================================
+name=input("Enter the name ")
+result=len(name)
+print(result)
+o/p:
+Enter the name Nazid Shaik
+11
+
+========================================================
+
+name="Nazid_Shaik"
+result=name.find("N")   # find is for first occurance
+result1=name.find("_")
+result2=name.find("q")
+result3=name.rfind("k")   #rfind is for last occurance
+print(result)
+print(result1)
+print(result2)   # Python gives negative number if string does have that char
+print(result3)
+
+o/p:
+0
+5
+-1
+10
+
+===================================================
+
+
+
+
+
+
+
+
+
+
 
 
 
