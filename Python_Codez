@@ -409,6 +409,17 @@ print(f"XXXX-XXXX-XXXX-{last_digit}")
 
 o/p:XXXX-XXXX-XXXX-3456
 
+=======Reverse a string===============
+
+credit_card=input("Enter the string: ")
+a=credit_card[::-1]
+print(a)
+o/p:
+Enter the string: Nazid_Shaik
+kiahS_dizaN
+
+========================================
+
 
 
 
