@@ -625,6 +625,53 @@ Balance after 1 year/s:  $124000.0
 
 ====================================================
 
+Principle=0
+Rate=0
+Time=0
+while True:
+    Principle= float(input("Enter the Principle "))
+    if Principle<0:
+        print("Principle can't be negative")
+    else:
+        break
+while True:
+    Rate= float(input("Enter the rate "))
+    if Rate<0:
+        print("Rate can't be negative") 
+    else:
+        break
+while True:
+    Time= int(input("Enter the Time "))
+    if Time<0:
+        print("TIme can't be negative") 
+    else:
+        break
+total=   Principle * pow((1+ Rate/100),Time)  
+print(f"The actual compund interest after {Time} year/s is ${total} ")
+        
+
+o/p1:
+Enter the Principle 0
+Enter the rate 0
+Enter the Time 0
+The actual compund interest after 0 year/s is $0.0 
+
+o/p2:
+Enter the Principle 100
+Enter the rate 12
+Enter the Time 1
+The actual compund interest after 1 year/s is $112.00000000000001 
+
+o/p3:
+Enter the Principle 1000
+Enter the rate 0
+Enter the Time 1
+The actual compund interest after 1 year/s is $1000.0 
+
+============================================
+
+
+
 
 
 
