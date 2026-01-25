@@ -717,6 +717,103 @@ o/p:
 9
 0
 ==========================================
+for x in range(1,7):
+    if x==2:
+        continue
+    else:
+        print(x)
+
+o/p:
+1
+3
+4
+5
+6
+==========================================
+for x in range(1,7):
+    if x==2:
+        break
+    else:
+        print(x)
+
+o/p:
+1
+=========TIME COUNT DOWN PROGRAM===============================
+
+# Count Down Function
+import time 
+my_time=int(input("Enter the time in seconds "))
+for x in reversed(range(0,my_time)):
+    print(x)
+    time.sleep(1)
+print("TIME'S UP !")
+
+o/p:
+Enter the time in seconds 5
+4
+3
+2
+1
+0
+TIME'S UP !
+=================================================
+# Count Down Function(Method2)
+import time 
+my_time=int(input("Enter the time in seconds "))
+for x in range(my_time,0,-1):
+    print(x)
+    time.sleep(1)
+print("TIME'S UP !")
+
+o/p:
+Enter the time in seconds 5
+5
+4
+3
+2
+1
+TIME'S UP !
+==================================================
+
+# Count Down Function
+import time 
+my_time=int(input("Enter the time in seconds "))
+for x in range(my_time,0,-1):
+    seconds= x%60
+    print(f"00:00:{seconds:02}")
+    time.sleep(1)
+print("TIME'S UP !")
+
+o/p:
+Enter the time in seconds 3
+00:00:03
+00:00:02
+00:00:01
+TIME'S UP !
+===============================================
+
+# Count Down Function
+import time 
+my_time =int(input("Enter the time in seconds "))
+for x in range(my_time,0,-1):
+    seconds=x%60
+    minutes=int(x/60)%60
+    hours=int(x/3600)
+    print(f"{hours:02}:{minutes:02}:{seconds:02}")
+    time.sleep(1)
+
+print("TIME'S UP")
+
+o/p:
+Enter the time in seconds 3700
+01:01:40
+01:01:39
+01:01:38
+======================================================
+
+
+
+
 
 
 
