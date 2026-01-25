@@ -529,7 +529,46 @@ The price of a is $3,323.35
 The price of b is $434.55
 The price of c is $-456.68
 
-===========================================
+=====WHILE LOOP======================================
+
+#While Loop executes some code if condition remains True
+
+name=input("Enter the name: ")
+while name=="":
+    print("You haven't entered the name ")
+    name=input("Enter the name: ")
+print (f"Hello,{name}")  
+
+o/p:
+Enter the name: 
+You haven't entered the name 
+Enter the name: 
+You haven't entered the name 
+Enter the name: 
+You haven't entered the name 
+Enter the name: Nazid
+Hello,Nazid
+===============================================
+
+age =int(input("Enter the age: "))
+while age<0:
+    print("Please enter the valid age! ")
+    age=int(input("Enter the age: "))
+print(f"You are {age} years old" )    
+
+o/p:
+Enter the age: -2
+Please enter the valid age! 
+Enter the age: -34
+Please enter the valid age! 
+Enter the age: 26
+You are 26 years old
+
+==============================================
+
+h
+
+
 
 
 
