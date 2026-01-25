@@ -418,7 +418,122 @@ o/p:
 Enter the string: Nazid_Shaik
 kiahS_dizaN
 
+===========Format Specifiers=============================
+# Format specifoer to round the value 2f/3f/4f etc to number of decimal positions
+
+a=3.345554
+b=434.545456
+c=-456.6788
+print(f"The price of a is {a:.2f}")
+print(f"The price of b is {b:.4f}")
+print(f"The price of c is {c:.3f}")
+
+o/p:
+The price of a is 3.35
+The price of b is 434.5455
+The price of c is -456.679
+
 ========================================
+
+#value :number gives those many spaces
+
+a=3.345554
+b=434.545456
+c=-456.6788
+print(f"The price of a is ${a:10}")
+print(f"The price of b is ${b:15}")
+print(f"The price of c is ${c:10}")
+
+o/p:
+The price of a is $  3.345554
+The price of b is $     434.545456
+The price of c is $ -456.6788
+
+=========================================
+
+#value :number gives those many spaces
+
+a=3.345554
+b=434.545456
+c=-456.6788
+print(f"The price of a is ${a:010}")
+print(f"The price of b is ${b:015}")
+print(f"The price of c is ${c:010}")
+
+o/p:
+The price of a is $003.345554
+The price of b is $00000434.545456
+The price of c is $-0456.6788
+
+=========================================
+
+#To show either positive or negative before the result
+
+a=3.345554
+b=434.545456
+c=-456.6788
+print(f"The price of a is ${a:+}")
+print(f"The price of b is ${b:+}")
+print(f"The price of c is ${c:-}")
+
+o/p:
+The price of a is $+3.345554
+The price of b is $+434.545456
+The price of c is $-456.6788
+
+========================================
+
+#To show either in center 
+
+a=323.345554
+b=434.545456
+c=-456.6788
+print(f"The price of a is ${a:^15}")
+print(f"The price of b is ${b:^15}")
+print(f"The price of c is ${c:^15}")
+
+o/p:
+The price of a is $  323.345554   
+The price of b is $  434.545456   
+The price of c is $   -456.6788   
+
+=========================================
+
+#To show either in center left or right we can use < or > 
+
+a=323.345554
+b=434.545456
+c=-456.6788
+print(f"The price of a is ${a:>20}")
+print(f"The price of b is ${b:>20}")
+print(f"The price of c is ${c:>20}")
+
+o/p:
+The price of a is $          323.345554
+The price of b is $          434.545456
+The price of c is $           -456.6788
+
+==========================================
+
+#To showcase as price with commas and limit to the decimal limit
+
+a=3323.345554
+b=434.545456
+c=-456.6788
+print(f"The price of a is ${a:,.2f}")
+print(f"The price of b is ${b:,.2f}")
+print(f"The price of c is ${c:,.2f}")
+
+o/p:
+The price of a is $3,323.35
+The price of b is $434.55
+The price of c is $-456.68
+
+===========================================
+
+
+
+
 
 
 
