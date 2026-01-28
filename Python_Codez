@@ -890,7 +890,117 @@ Enter the symbol to use: #
 #####
 #####
 
-==================================================
+========# Collection=single "variable" which is used to store multiple values==================
+
+# List=[] ordered and changeable but duplicates are OK
+
+fruits=["apple","banana","orange","grape"]
+print(fruits)
+
+o/p:
+['apple', 'banana', 'orange', 'grape']
+
+==========================================
+
+fruits=["apple","banana","orange","grape"]
+print(fruits[0])
+print(fruits[3])
+
+o/p:
+apple
+grape
+===========================================
+
+fruits=["apple","banana","orange","grape"]
+print(fruits[0:3])
+print(fruits[1:3])
+print(fruits[::2])
+print(fruits[::-1])
+
+o/p:
+
+['apple', 'banana', 'orange']
+['banana', 'orange']
+['apple', 'orange']
+['grape', 'orange', 'banana', 'apple']
+
+===========================================
+
+fruits=["apple","banana","orange","grape"]
+for _ in fruits:
+    print(_)
+
+o/p:
+apple
+banana
+orange
+grape
+===========================================
+
+fruits=["apple","banana","orange","grape"]
+print(help(fruits))
+
+o/p:
+you can view all the list functions
+
+===========================================
+
+fruits=["apple","banana","orange","grape"]
+print(len(fruits))
+
+o/p:4
+==========================================
+
+fruits=["apple","banana","orange","grape"]
+print("apple" in fruits)
+print("pineapple" in fruits)
+
+o/p:
+True
+False
+===========================================
+# list we can change the values
+fruits=["apple","banana","orange","grape"]
+fruits[0]="Mango"
+for x in fruits:
+    print(x)
+
+o/p:
+Mango
+banana
+orange
+grape
+=============================================
+# list append
+
+fruits=["apple","banana","orange","grape"]
+fruits.append("Coconut")
+print(fruits)
+
+o/p:
+['apple', 'banana', 'orange', 'grape', 'Coconut']
+================================================
+
+List operations:
+fruits=["apple","banana","orange","grape"]
+# fruits.append("Coconut")
+# fruits.remove("Coconut")
+# fruits.sort()
+# fruits.insert(4,"carrot")
+# fruits.reverse()
+# print(fruits.index("orange"))
+
+# print(fruits.count("banana"))
+
+===============================================
+
+
+
+
+
+
+
+
 
 
 
