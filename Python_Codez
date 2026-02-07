@@ -1059,6 +1059,81 @@ O/p:
 {'cross', 'data', 'poem'}
 
 ================================================
+zip={"folder","data","poem","cross","cross"}
+print(zip)
+
+o/p:
+{'folder', 'poem', 'data', 'cross'}
+
+================TUPLE: ordered and immutable.Duplicates OK .Faster================================
+
+branch=("Mech","Civil","Electrical","computers")
+print(dir(branch))
+print(help(branch))
+
+===============================================
+
+branch=("Mech","Civil","Electrical","computers")
+print(branch.index("Civil"))
+o/p:
+1
+===============================================
+
+branch=("Mech","Civil","Electrical","computers","sql","sql")
+print(branch.count("sql"))
+o/p:
+2
+
+==============================================
+
+branch=("Mech","Civil","Electrical","computers","sql","sql")
+print(len(branch))
+
+o/p:6
+
+==============================================
+
+# shopping cart program
+
+foods=[]
+prices=[]
+total=0
+while True:
+    food= input("Enter the food item you want to buy (q to quit): ")
+    if food.lower()=="q":
+        break
+    else:
+        price=float(input(f"Enter the price of ${food}: "))
+        foods.append(food)
+        prices.append(price)
+        
+print("----YOUR CART----")     
+for i in range(len(foods)):
+    print(f"{foods[i]} is {prices[i]}")
+  
+for price in prices:
+    total+=price
+    
+gst=total*(0.05,0.1)[total>2000]
+print(f"GST charged {gst}")
+
+print(f"Your total amount to be paid $ {total}" )
+
+o/p:
+
+Enter the food item you want to buy (q to quit): idly
+Enter the price of $idly: 35
+Enter the food item you want to buy (q to quit): dosa
+Enter the price of $dosa: 45
+Enter the food item you want to buy (q to quit): q
+----YOUR CART----
+idly is 35.0
+dosa is 45.0
+GST charged 4.0
+Your total amount to be paid $ 80.0
+
+
+
 
 
 
