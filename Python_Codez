@@ -1133,10 +1133,45 @@ GST charged 4.0
 Your total amount to be paid $ 80.0
 
 
+====================================================================
+## Shopping cart simple
 
+foods=[]
+prices=[]
+total=0
+while True:
+    food =input("Enter the food you wanted to Buy (q to quit) ")
+    if food.lower()=="q":
+        break
+    else:
+        price=float(input("Enter the price of food "))
+        foods.append(food)
+        prices.append(price)
+        
+print("===========Your cart================")    
 
+for food in foods:
+    print(food,end=" ")
+for price in prices:
+    total +=price
+print()
+print(f"Your Total amount ${total}")    
 
+o/p:
+Enter the food you wanted to Buy (q to quit) dosa
+Enter the price of food 35
+Enter the food you wanted to Buy (q to quit) omlet
+Enter the price of food 20
+Enter the food you wanted to Buy (q to quit) vada
+Enter the price of food 7
+Enter the food you wanted to Buy (q to quit) idly 
+Enter the price of food 20
+Enter the food you wanted to Buy (q to quit) q
+===========Your cart================
+dosa omlet vada idly  
+Your Total amount $82.0
 
+=========================================================================
 
 
 
