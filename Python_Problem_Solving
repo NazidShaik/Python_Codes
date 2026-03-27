@@ -1,1 +1,24 @@
+Q) Sample Input :Na1ra2ya3n4q
+Expected Output:Na4ra3ya2n1q
 
+Solution1:
+
+s="Na1ra2ya3n4q"
+r=list(s)
+o=""
+z=[]
+for i in s:
+    if i.isdigit():
+        z.append(i)
+z.reverse()
+f = 0
+for j in range(len(r)):
+    if r[j].isdigit():
+        for l in range(f,len(z)):
+            r[j]=z[l]
+            o=o+r[j]
+            break;
+        f=f+1
+    else:
+        o=o+r[j]
+print(o)
