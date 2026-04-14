@@ -1248,8 +1248,107 @@ o/p:
 * 0 # 
 
 ==================================
+#Quiz Program 
+
+questions=("which job is hard to crack",
+           "which animal is bigger in size?",
+           "who is the father of nation?",
+           "when python was invented?",
+           "Where does Nazid does his job?")
+options =(("A:Data Engineer ", "B:Data Scientist ", "C:Python Developer", "D:Rocket Scientist "),
+          ("A:Elephant", "B:Rhino ", "C:Cat", "D:Ox"),
+          ("A:Gandhi ", "B:Prabhas", "C:sundar", "D:Nehru"),
+          ("A:1989 ", "B:1947 ", "C:2002", "D:2002 "),
+          ("A:TCS ", "B:Ford ", "C:Apple ", "D:Google ")) 
+          
+answers =("D","A","A","B","B")       
+guesses=[]
+score=0 
+question_num=0
+
+for question in questions:
+    print("-----------------------")
+    print(question)
+    for option in options[question_num]:
+        print(option)
+    guess=input("Enter any of the option(A,B,C,D):").upper()
+    guesses.append(guess)
+    if guess==answers[question_num]:
+        score+=1
+        print("CORRECT!")
+    else:
+        print("INCORRECT")
+        print(f"{answers[question_num]} is the correct answer")
+    question_num+=1
+    
+print("-------------------")
+print("     RESULTS       ")
+print("-------------------")
+
+print(answers)
+for answer in answers:
+    print(answer,end=" ")
+print()    
+for guess in guesses:
+    print(guess,end=" ")
+print()    
+
+score=int(score/len(questions) * 100)
+print(f"Your Score is {score}")
+
+o/p:
+
+-----------------------
+which job is hard to crack
+A:Data Engineer 
+B:Data Scientist 
+C:Python Developer
+D:Rocket Scientist 
+Enter any of the option(A,B,C,D):D
+CORRECT!
+-----------------------
+which animal is bigger in size?
+A:Elephant
+B:Rhino 
+C:Cat
+D:Ox
+Enter any of the option(A,B,C,D):A
+CORRECT!
+-----------------------
+who is the father of nation?
+A:Gandhi 
+B:Prabhas
+C:sundar
+D:Nehru
+Enter any of the option(A,B,C,D):A
+CORRECT!
+-----------------------
+when python was invented?
+A:1989 
+B:1947 
+C:2002
+D:2002 
+Enter any of the option(A,B,C,D):Q
+INCORRECT
+B is the correct answer
+-----------------------
+Where does Nazid does his job?
+A:TCS 
+B:Ford 
+C:Apple 
+D:Google 
+Enter any of the option(A,B,C,D):B
+CORRECT!
+-------------------
+     RESULTS       
+-------------------
+('D', 'A', 'A', 'B', 'B')
+D A A B B 
+D A A C B 
+Your Score is 80
 
 
+** Process exited - Return Code: 0 **
 
 
 
