@@ -1247,7 +1247,7 @@ o/p:
 7 8 9 
 * 0 # 
 
-==================================
+============QUIZ PROGRAM START======================
 #Quiz Program 
 
 questions=("which job is hard to crack",
@@ -1347,8 +1347,7 @@ D A A B B
 D A A C B 
 Your Score is 80
 
-
-** Process exited - Return Code: 0 **
+==============QUIZ PROGRAM END===============
 
 
 
