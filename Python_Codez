@@ -1184,6 +1184,51 @@ o/p:
 [['mango', 'banana', 'papaya'], ['potato', 'onion', 'tomato']]
 
 
+=====================================
+
+fruits=["mango","banana","papaya"]
+vegetable= ["potato","onion","tomato"]
+groceries=[fruits,vegetable]
+print(groceries[0])
+print(groceries[0][2])
+print(groceries[1][2])
+
+o/p:
+['mango', 'banana', 'papaya']
+papaya
+tomato
+
+========================================
+
+fruits=["mango","banana","papaya"]
+vegetable= ["potato","onion","tomato"]
+meat=["chicken","fish","mutton"]
+groceries=[fruits,vegetable,meat]
+for collection in groceries:
+    print(collection)
+
+o/p:
+['mango', 'banana', 'papaya']
+['potato', 'onion', 'tomato']
+['chicken', 'fish', 'mutton']
+
+=====================================
+
+fruits=["mango","banana","papaya"]
+vegetable= ["potato","onion","tomato"]
+meat=["chicken","fish","mutton"]
+groceries=[fruits,vegetable,meat]
+for collection in groceries:
+    for food in collection:
+        print(food,end=" ")
+    print()    
+
+o/p:
+mango banana papaya 
+potato onion tomato 
+chicken fish mutton 
+======================================
+
 
 
 
