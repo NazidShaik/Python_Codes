@@ -1173,7 +1173,15 @@ Your Total amount $82.0
 
 =========================================================================
 
+#Dimensional list 
 
+fruits=["mango","banana","papaya"]
+vegetable= ["potato","onion","tomato"]
+groceries=[fruits,vegetable]
+print(groceries)
+
+o/p:
+[['mango', 'banana', 'papaya'], ['potato', 'onion', 'tomato']]
 
 
 
