@@ -1349,6 +1349,216 @@ Your Score is 80
 
 ==============QUIZ PROGRAM END===============
 
+==================Dictionary ==============================================
+
+#Dictionary = a collection of {key:value} pairs.
+             Ordered and changeable .No Duplicates are allowed
+
+capital= {"India": "Delhi",
+         "USA": "Washington D.C",
+         "China": "Beijing",
+         "Russia": "Moscow"}
+print(dir(capital))  
+#Print(help(capital))
+o/p:
+['__class__', '__class_getitem__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__ior__', '__iter__', '__le__', '__len__', '__lt__', '__ne__', '__new__', '__or__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__ror__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'clear', 'copy', 'fromkeys', 'get', 'items', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values']
+
+
+=======================================
+
+capital= {"India": "Delhi",
+         "USA": "Washington D.C",
+         "China": "Beijing",
+         "Russia": "Moscow"}
+print(capital.get("USA")) 
+print(capital.get("China"))
+print(capital.get("Japan"))
+
+o/p:
+Washington D.C
+Beijing
+None
+
+==================================
+
+capital= {"India": "Delhi",
+         "USA": "Washington D.C",
+         "China": "Beijing",
+         "Russia": "Moscow"}
+if capital.get("USA"):
+    print("The capital exist")
+else:
+    print("The capital doesn't exist")
+
+o/p:
+The capital exist
+===================================
+
+capital= {"India": "Delhi",
+         "USA": "Washington D.C",
+         "China": "Beijing",
+         "Russia": "Moscow"}
+if capital.get("Japan"):
+    print("The capital exist")
+else:
+    print("The capital doesn't exist")
+o/p:
+The capital doesn't exist
+
+====================================
+
+capital= {"India": "Delhi",
+         "USA": "Washington D.C",
+         "China": "Beijing",
+         "Russia": "Moscow"}
+capital.update({"Italy":"Rome"})
+print(capital)
+
+o/p:
+{'India': 'Delhi', 'USA': 'Washington D.C', 'China': 'Beijing', 'Russia': 'Moscow', 'Italy': 'Rome'}
+
+===================================
+
+capital= {"India": "Delhi",
+         "USA": "Washington D.C",
+         "China": "Beijing",
+         "Russia": "Moscow"}
+capital.update({"USA":"Pakistan"})
+print(capital)
+
+o/p:
+{'India': 'Delhi', 'USA': 'Pakistan', 'China': 'Beijing', 'Russia': 'Moscow'}
+
+====================================
+
+capital= {"India": "Delhi",
+         "USA": "Washington D.C",
+         "China": "Beijing",
+         "Russia": "Moscow"}
+capital.pop("USA")
+print(capital)
+o/p:
+{'India': 'Delhi', 'China': 'Beijing', 'Russia': 'Moscow'}
+
+======================================
+
+capital= {"India": "Delhi",
+         "USA": "Washington D.C",
+         "China": "Beijing",
+         "Russia": "Moscow"}
+capital.popitem()                     #last value remove with popitems
+print(capital)
+
+o/p:
+{'India': 'Delhi', 'USA': 'Washington D.C', 'China': 'Beijing'}
+
+=======================================
+
+capital= {"India": "Delhi",
+         "USA": "Washington D.C",
+         "China": "Beijing",
+         "Russia": "Moscow"}
+capital.clear()
+print(capital)
+
+o/p:
+{}
+
+===================================
+
+capital= {"India": "Delhi",
+         "USA": "Washington D.C",
+         "China": "Beijing",
+         "Russia": "Moscow"}
+keys= capital.keys()
+print(keys)
+
+o/p:
+dict_keys(['India', 'USA', 'China', 'Russia'])
+
+======================================
+
+capital= {"India": "Delhi",
+         "USA": "Washington D.C",
+         "China": "Beijing",
+         "Russia": "Moscow"}
+for key in capital.keys():
+    print(key)
+
+o/p:
+
+India
+USA
+China
+Russia
+
+====================================
+
+capital= {"India": "Delhi",
+         "USA": "Washington D.C",
+         "China": "Beijing",
+         "Russia": "Moscow"}
+values=capital.values()
+print(values)
+
+o/p:
+dict_values(['Delhi', 'Washington D.C', 'Beijing', 'Moscow'])
+
+====================================
+
+capital= {"India": "Delhi",
+         "USA": "Washington D.C",
+         "China": "Beijing",
+         "Russia": "Moscow"}
+for v in capital.values():
+    print(v)
+
+o/p:
+Delhi
+Washington D.C
+Beijing
+Moscow
+
+=================================
+
+capital= {"India": "Delhi",
+         "USA": "Washington D.C",
+         "China": "Beijing",
+         "Russia": "Moscow"}
+items=capital.items()
+print(items)
+
+o/p:
+dict_items([('India', 'Delhi'), ('USA', 'Washington D.C'), ('China', 'Beijing'), ('Russia', 'Moscow')])
+
+================================
+
+capital= {"India": "Delhi",
+         "USA": "Washington D.C",
+         "China": "Beijing",
+         "Russia": "Moscow"}
+for key,value in capital.items():
+    print(f"{key}:{value}")
+
+o/p:
+India:Delhi
+USA:Washington D.C
+China:Beijing
+Russia:Moscow
+
+================================
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
