@@ -1546,7 +1546,57 @@ USA:Washington D.C
 China:Beijing
 Russia:Moscow
 
-================================
+============Consession program start======================
+
+menu={"pizza":150,
+      "panipuri":30,
+      "omlet":30,
+      "dosa":50,
+      "idly":35,
+      "roti":19,
+      "vada":40}
+cart=[] 
+total=0 
+print("=============MENU======================")
+for key,value in menu.items():
+    print(f"{key:10}:Rs{value:.2f}")
+while True:
+    food=input("Please select the food order (q to quit)").lower()
+    if food=="q":
+        break
+    elif menu.get(food) is not None:
+        cart.append(food)
+print("===========YOUR ORDER==================")        
+for food in cart:
+    total=total + menu.get(food)
+    print(food,end=" ")
+    
+print()
+print("=======================================")
+
+print(f"Your total order amount{total:.2f}")
+    
+o/p:
+=============MENU======================
+pizza     :Rs150.00
+panipuri  :Rs30.00
+omlet     :Rs30.00
+dosa      :Rs50.00
+idly      :Rs35.00
+roti      :Rs19.00
+vada      :Rs40.00
+Please select the food order (q to quit)pizza
+Please select the food order (q to quit)roti
+Please select the food order (q to quit)q
+===========YOUR ORDER==================
+pizza roti 
+=======================================
+Your total order amount169.00
+
+
+============Consession program end======================
+
+        
 
 
 
