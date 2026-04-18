@@ -1712,8 +1712,46 @@ Number of guesses: 0
 ======PYTHON NUMBER GUESSING GAME PROGRAM END============================
 
 
+========ROCK,PAPER and SCISSORS GAME PROGRAM START======================
 
+import random
+options=("rock","paper","scissor")
+playing =True
+while playing:
+    player=None
+    computer=random.choice(options)
+    while player not in options:
+        player=input("Enter a choice (rock,paper,scissor): ")
+        print(f"player:{player}")
+        print(f"Computer:{computer}")
 
+        if player==computer:
+            print("Its a TIE")
+        elif player=="rock" and computer=="scissor":
+            print("You win!")
+        elif player=="scissor" and computer=="paper":
+            print("You Win!")
+        else:
+            print("YOU LOSE:)")
+        
+        if not input("Play again? (y/n)").lower()=="y":
+            playing=False
+print("Thanks for playing!")        
+    
+o/p:
+Enter a choice (rock,paper,scissor): rock
+player:rock
+Computer:scissor
+You win!
+Play again? (y/n)y
+Enter a choice (rock,paper,scissor): scissor
+player:scissor
+Computer:rock
+YOU LOSE:)
+Play again? (y/n)n
+Thanks for playing!
+
+========ROCK,PAPER and SCISSORS GAME PROGRAM END======================
 
 
 
