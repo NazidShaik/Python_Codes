@@ -1597,6 +1597,64 @@ Your total order amount169.00
 ============Consession program end======================
 
         
+============RANDOW MODULE ===========================
+
+import random
+print(help(random))
+
+=======================================
+
+import random
+num= random.randint(0,20)
+print(num)
+
+o/p:
+19
+
+==========================================
+
+import random
+num= random.random()                #Generate Random point number b/w 0 to 1
+print(num)
+
+o/p:
+0.20091732427975728
+
+===================================
+
+import random
+low=0
+high=100
+num=random.randint(low,high)
+print(num)
+
+o/p:
+29
+====================================
+
+import random
+options=("Rock","Paper","Scissors")
+k=random.choice(options)
+print(k)
+
+o/p:Paper
+
+==================================
+
+import random
+cards=["A","K","J","2","6","9","Q"]
+k=random.shuffle(cards)
+print(cards)
+
+o/p:
+['A', 'Q', '6', '2', 'K', '9', 'J']
+===================================
+
+
+
+
+
+
 
 
 
