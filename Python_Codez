@@ -1753,9 +1753,52 @@ Thanks for playing!
 
 ========ROCK,PAPER and SCISSORS GAME PROGRAM END======================
 
+===============================================
+Functions : A block of reusable code 
+           place() after the function to invoke it 
 
 
+def happy_birthday():
+    print("Happy Birthday to You!")
+    print("Happy Birthday to You!")
+    print("May God bless you!")
+    
+happy_birthday()  
 
+o/p:
+Happy Birthday to You!
+Happy Birthday to You!
+May God bless you!
+
+================================================
+## passing argument to function
+
+def happy_birthday(name):
+    print(f"Happy Birthday to {name}!")
+    print(f"Happy Birthday to You!")
+ 
+    
+happy_birthday("Nazid")    
+happy_birthday("Bro") 
+
+o/p:
+Happy Birthday to Nazid!
+Happy Birthday to You!
+Happy Birthday to Bro!
+Happy Birthday to You!
+
+=========================================
+#passing 2 arguments 
+
+def happy_birthday(name,age):
+    print(f"Happy Birthday to {name}!")
+    print(f"{name} is {age} years old")
+
+happy_birthday("Nazid",27)    
+
+o/p:
+Happy Birthday to Nazid!
+Nazid is 27 years old
 
 
 
