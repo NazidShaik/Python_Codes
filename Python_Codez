@@ -1853,6 +1853,138 @@ print(full_name)
 o/p:
 Nazid Shaik
 
+=========================================
+
+#Default Arguments = A default value for certain paramters
+                     Default is used when the arguement is omitted
+                     make your function more flexible ,reduces # of arguments 
+                     1.POSITIONAL 2.DEFAULT , 3.KEYWORD 4.ARBITARY 
+
+def net_price(list_price,discount=0,tax=0.05):
+    return list_price * (1- discount) * (1+tax)
+#print(net_price(500,0,0.05))   instead of this make default in function
+print(net_price(500))
+print(net_price(500,0.1))  # if we give extra argument it overide default 
+print(net_price(500,0.1,0))
+
+o/p:
+525.0
+472.5
+450.0
+
+====================================
+
+import time
+
+def count(start,end):
+    for x in range(start,end+1):
+        print(x)
+        time.sleep(1)
+    print("Done!")
+count(0,10)   
+
+o/p:
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+Done!
+
+==============================================
+
+import time
+
+def count(end,start=0):
+    for x in range(start,end+1):
+        print(x)
+        time.sleep(1)
+    print("Done!")
+count(5)    
+
+o/p:
+0
+1
+2
+3
+4
+5
+Done!
+
+==============================================
+
+import time
+
+def count(end,start=0):
+    for x in range(start,end+1):
+        print(x)
+        time.sleep(1)
+    print("Done!")
+count(30,23)   
+
+o/p:
+23
+24
+25
+26
+27
+28
+29
+30
+Done!
+
+=============================================
+
+##Keyword arguments = An argument preceded by identifier
+                     helps with readability
+                     order of arguments doesn't matter 
+
+def hello(greeting, title ,first ,last):
+    print(f"{greeting} {title} {first} {last}")
+hello("Hello",title="Mr",first="Nazid",last="Shaik")
+hello("Hello",title="Mr",last="Nazid",first="Shaik")
+
+o/p:
+Hello Mr Nazid Shaik
+Hello Mr Shaik Nazid
+
+=================================================
+
+# There are lot of keyword arguments which we don't know 
+Eg1:
+for x in range(1,10):
+    print(x,end=" ")    ## here end is the keyword argument
+
+o/p:1 2 3 4 5 6 7 8 9 
+
+Eg2:
+print("1","2","3","4",sep="-")      ##Here seperate is alos keyword argument
+
+o/p:
+1-2-3-4
+=================================================
+
+def get_phone(country,area,first,last):
+    return f"{country}-{area}-{first}-{last}"
+phone_num=get_phone(country=1,area=232,first=1134,last=223)  
+print(phone_num)
+
+o/p:
+1-232-1134-223
+
+====================================================
+
+
+
+
+
+
 
 
 
