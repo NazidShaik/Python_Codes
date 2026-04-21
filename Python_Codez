@@ -2015,9 +2015,105 @@ display_name("Mr","Nazid","Shaik","II")
 o/p:
 Mr Nazid Shaik II 
 
+========================================================
+#Kwargs codes 
+
+def address(**kwargs):
+    print(type(kwargs))
+address(street="Gandhi Nagar",
+        city="USA",
+        state="MI")   
+
+o/p:
+<class 'dict'>
+==============================================
+
+def address(**kwargs):
+    for value in kwargs.values():
+        print(value)
+address(street="Gandhi Nagar",
+        city="USA",
+        state="MI")  
+
+o/p:
+Gandhi Nagar
+USA
+MI
+
+=======================================
+
+def address(**kwargs):
+    for key in kwargs.keys():
+        print(key)
+address(street="Gandhi Nagar",
+        city="USA",
+        state="MI")   
+
+o/p:
+street
+city
+state
 
 
+========================================
 
+
+def address(**kwargs):
+    for key ,value in kwargs.items():
+        print(f"{key}:{value}")
+address(
+        aptno="344",
+        street="Gandhi Nagar",
+        city="USA",
+        state="MI",
+        zip="55433")   
+
+o/p:
+aptno:344
+street:Gandhi Nagar
+city:USA
+state:MI
+zip:55433
+
+=====================================
+
+def shipping_label(*args,**kwargs):
+    for arg in args:
+        print(arg,end=" ")
+    print() 
+    for value in kwargs.values():
+        print(value,end=" ")
+    
+shipping_label("Mr","Shaik","Nazid",
+                Street="vembuli Nagar",
+                Area="Karapakkam",
+                city="Dubai")     
+
+o/p:
+Mr Shaik Nazid 
+vembuli Nagar Karapakkam Dubai
+
+===========================================
+
+def shipping_label(*args,**kwargs):
+    for arg in args:
+        print(arg,end=" ")
+    print() 
+    print(f"{kwargs.get("Street")}")
+    print(f"{kwargs.get("Area")} {kwargs.get("city")}")
+    
+shipping_label("Mr","Shaik","Nazid",
+                Street="vembuli Nagar",
+                Area="Karapakkam",
+                city="Dubai")    
+    
+o/p:
+
+Mr Shaik Nazid 
+vembuli Nagar
+Karapakkam Dubai
+
+================================================
 
 
 
