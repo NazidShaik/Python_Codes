@@ -1980,13 +1980,40 @@ o/p:
 
 ====================================================
 
+##ARBITARY ARGUMENTS
+*args: == allows you to pass multiple non-key arguments
+**kwargs: == allows you to pass multiple keywor-arguments
+* is unpacking operator
 
 
+def add(*args):
+    print(type(args))
+add(1,2,3)   
 
+o/p:
+<class 'tuple'>
 
+===================================================
 
+def add(*args):
+    total=0
+    for arg in args:
+        total+=arg
+    return total
+print(add(1,2,3))    
 
+o/p:
+6
 
+======================================================
+
+def display_name(*name):
+    for n in name:
+        print(n,end=" ")
+display_name("Mr","Nazid","Shaik","II")  
+
+o/p:
+Mr Nazid Shaik II 
 
 
 
